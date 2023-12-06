@@ -1,0 +1,31 @@
+html,
+body {
+  height: 100%;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  overflow-x: hidden;
+}
+
+.main {
+}
+
+.footer {
+  flex: 0 0 auto;
+}
+
+.swiper-container {
+}
+
+.container {
+}
+
+body._lock {
+  overflow: hidden;
+}
+
+body {
+}
