@@ -16,11 +16,13 @@
 //</HEDER + FOOTER STYLE>===========================
 
 //Components
-// @import '_components/';
+@import '_components/_button';
 
 //<PAGES STYLE>=====================================
 
 // index.html
 @import 'pages/index/shared';
 @import 'pages/index/about-us';
+@import 'pages/index/roadmap';
+@import 'pages/index/our-brand';
 // @import '_base/extra.scss';
