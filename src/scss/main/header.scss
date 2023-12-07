@@ -1,4 +1,73 @@
 .header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.015) 0%, rgba(0, 0, 0, 0.738) 40%);
   &__body {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 110px;
+    @media (max-width: 1023px) {
+      height: 80px;
+    }
+    @media (max-width: 768px) {
+      height: 60px;
+    }
+  }
+  &__logo {
+    position: relative;
+    z-index: 3;
+    padding-right: 20px;
+    img {
+      max-width: 100%;
+    }
+    @media (max-width: 1023px) {
+      padding-left: 5px;
+    }
+  }
+  .menu {
+    &__icon {
+      display: none;
+    }
+    &__body {
+      @media (max-width: 1023px) {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        padding-top: 110px;
+      }
+    }
+
+    &__list {
+      display: flex;
+      text-align: center;
+      position: relative;
+      z-index: 3;
+      flex-wrap: wrap;
+    }
+    &__item {
+      margin-right: 44px;
+    }
+    &__link {
+      position: relative;
+      color: #fff;
+      font-weight: 500;
+      line-height: 140%;
+      display: inline-block;
+      padding: 8px;
+
+      opacity: 0.7;
+      transition: 0.3s;
+    }
+  }
+  .hidden {
+    opacity: 0%;
   }
 }
