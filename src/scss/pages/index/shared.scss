@@ -1,0 +1,20 @@
+.shared {
+  position: relative;
+  min-height: 100%;
+  padding: 110px 0px;
+  display: flex;
+  align-items: center;
+  &__body {
+    flex: 1 1 auto;
+  }
+}
+.info {
+  &__title {
+    margin-bottom: calc(18 / 20) + em;
+    line-height: 140%;
+  }
+  &__subtitle {
+    font-family: Helios, sans-serif;
+    font-weight: 700;
+  }
+}

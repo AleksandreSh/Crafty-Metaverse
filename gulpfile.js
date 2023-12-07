@@ -3,16 +3,16 @@ import gulp from 'gulp';
 // Імпорт шляхів
 import { path } from './gulp/config/path.js';
 // Імпорт спільних плагінів
-import { plugins } from "./gulp/config/plugins.js";
+import { plugins } from './gulp/config/plugins.js';
 
 // Передаєм значення в глобальну змінну
 global.app = {
-    isBuild: process.argv.includes('--build'),
-	isDev: !process.argv.includes('--build'),
-	path: path,
-    gulp: gulp,
-    plugins: plugins
-}
+  isBuild: process.argv.includes('--build'),
+  isDev: !process.argv.includes('--build'),
+  path: path,
+  gulp: gulp,
+  plugins: plugins
+};
 
 // Імпорт задач
 import { copy } from './gulp/tasks/copy.js';
@@ -29,11 +29,11 @@ import { ftp } from './gulp/tasks/ftp.js';
 
 // Наглядач за змінами у файлах
 function watcher() {
-	gulp.watch(path.watch.files, copy); //copy -> gulp.series(copy, ftp) - для автоматичного вивантаження всих змін на FTP сервер, потрібно прописати для кожного!
-	gulp.watch(path.watch.html, html); //html -> gulp.series(html, ftp)
-    gulp.watch(path.watch.scss, scss); //scss -> gulp.series(scss, ftp)
-    gulp.watch(path.watch.js, js); //js -> gulp.series(js, ftp)
-	gulp.watch(path.watch.images, images); //images -> gulp.series(images, ftp)
+  gulp.watch(path.watch.files, copy); //copy -> gulp.series(copy, ftp) - для автоматичного вивантаження всих змін на FTP сервер, потрібно прописати для кожного!
+  gulp.watch(path.watch.html, html); //html -> gulp.series(html, ftp)
+  gulp.watch(path.watch.scss, scss); //scss -> gulp.series(scss, ftp)
+  gulp.watch(path.watch.js, js); //js -> gulp.series(js, ftp)
+  gulp.watch(path.watch.images, images); //images -> gulp.series(images, ftp)
 }
 
 // Запуск вручну (npm run svgSprive); package.json -> "scripts"
@@ -57,5 +57,5 @@ export { build };
 export { deployZIP };
 export { deployFTP };
 
-// Виконання сценарію за замовчуванням 
+// Виконання сценарію за замовчуванням
 gulp.task('default', dev);

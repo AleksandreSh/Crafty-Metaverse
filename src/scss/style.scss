@@ -1,25 +1,105 @@
-// // Swiper
-// @import '../../node_modules//swiper/swiper-bundle';
+// Swiper
+@import '../../node_modules//swiper/swiper-bundle';
 
-// //<SETTINGS>========================================
-// // @import '_fonts/fonts';
-// @import '_base/null';
-// @import '_base/helpers';
-// @import '_base/mixins';
-// @import '_base/basic';
-// //<SETTINGS>========================================
+//<SETTINGS>========================================
+@font-face {
+  font-family: Gilroy;
+  src: url(../fonts/GilroyBold.woff2) format('woff2');
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
 
-// //<HEDER + FOOTER STYLE>============================
-// @import 'main/header';
-// @import 'main/footer';
-// //</HEDER + FOOTER STYLE>===========================
+@font-face {
+  font-family: Gilroy;
+  src: url(../fonts/GilroyMedium.woff2) format('woff2');
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
 
-// //Components
+@font-face {
+  font-family: Gilroy;
+  src: url(../fonts/GilroyRegular.woff2) format('woff2');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Helios;
+  src: url(../fonts/HeliosBlackC.woff2) format('woff2');
+  font-weight: 900;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Helios;
+  src: url(../fonts/HeliosExtCBold.woff2) format('woff2');
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Mandatory;
+  src: url(../fonts/MandatoryRegular.woff2) format('woff2');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: PlusJakarta;
+  src: url(../fonts/PlusJakartaRegular.woff2) format('woff2');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: PlusJakarta;
+  src: url(../fonts/PlusJakartaMedium.woff2) format('woff2');
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: PlusJakarta;
+  src: url(../fonts/PlusJakartaLight.woff2) format('woff2');
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: PlusJakarta;
+  src: url(../fonts/PlusJakartaBold.woff2) format('woff2');
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+// @import '_fonts/fonts';
+@import '_base/null';
+@import '_base/helpers';
+@import '_base/mixins';
+@import '_base/basic';
+//<SETTINGS>========================================
+
+//<HEDER + FOOTER STYLE>============================
+@import 'main/header';
+@import 'main/footer';
+//</HEDER + FOOTER STYLE>===========================
+
+//Components
 // @import '_components/';
 
-// //<PAGES STYLE>=====================================
+//<PAGES STYLE>=====================================
 
-// // index.html
-// @import '';
+// index.html
+@import 'pages/index/shared';
 
-// // @import '_base/extra.scss';
+// @import '_base/extra.scss';
