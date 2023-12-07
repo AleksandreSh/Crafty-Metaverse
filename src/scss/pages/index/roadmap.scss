@@ -125,6 +125,7 @@
       }
     }
   }
+
   &__item {
     max-width: 480px;
     &:nth-child(1) {
@@ -138,6 +139,41 @@
     }
     &_left {
       align-self: start;
+    }
+    &-title {
+      position: relative;
+      font-size: 22px;
+      font-weight: 700;
+      max-width: 360px;
+      line-height: 140%;
+
+      margin-bottom: 18px;
+    }
+  }
+
+  &__list {
+    &-item {
+      position: relative;
+      line-height: 140%;
+      font-size: 18px;
+
+      padding-left: 36px;
+
+      span {
+        opacity: 0.8;
+      }
+      &:not(:last-child) {
+        margin-bottom: 15px;
+      }
+      &::before {
+        content: '';
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        top: 2px;
+        left: 0;
+        background: url('../img/Road-map/yes.svg') 0 0 no-repeat;
+      }
     }
   }
 }
