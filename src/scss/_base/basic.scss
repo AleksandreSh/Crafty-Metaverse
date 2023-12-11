@@ -7,7 +7,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100%;
-  overflow-x: hidden;
+  // overflow-x: hidden;
 }
 
 .main {
@@ -18,6 +18,40 @@ body {
 }
 
 .swiper-container {
+}
+
+h1,
+h2,
+h3 {
+}
+
+h1 {
+  margin-bottom: 12px;
+  line-height: 28px;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 1);
+  font-weight: 400;
+  @include screen-xl {
+    font-size: 16px;
+  }
+}
+
+h2 {
+  font-family: $fontFamily-second, sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  letter-spacing: 7px;
+  line-height: 140%;
+  @include screen-xl {
+    font-size: 26px;
+  }
+}
+
+h3 {
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: 0em;
+  text-align: left;
 }
 
 .container {
@@ -31,8 +65,13 @@ body._lock {
 }
 
 body {
-  font-family: PlusJakarta, sans-serif;
+  line-height: 1.4;
+  font-family: $fontFamily-main, sans-serif;
   background-color: #18072d;
   color: #fff;
   font-size: 20px;
+}
+.background {
+  position: relative;
+  background: url('../img/main/Vector.svg') 0 0 repeat-y;
 }

@@ -1,6 +1,17 @@
 .brand {
   position: relative;
   padding: 110px 0;
+  background: url('../img/our-brands/Vector.svg') 0 0 repeat;
+
+  &__bg {
+    z-index: -3;
+    position: absolute;
+    &-fourth {
+      z-index: -3;
+      position: absolute;
+      top: 10px;
+    }
+  }
 
   &__container {
     position: relative;
@@ -15,18 +26,98 @@
     text-align: center;
     margin-bottom: 90px;
   }
+
   &__subtitle {
-    font-family: Helios, sans-serif;
+    // font-family: $fontFamily-second;
     font-size: 45px;
   }
+
   &__row {
     display: flex;
-    margin: 0 -40px;
+    // margin: 0px 150px;
+    margin: 0 -12px;
     justify-content: space-between;
+
+    @media (max-width: 1300px) {
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
   }
+
   &__column {
     flex: 0 0 30%;
     padding: 0 40px;
     display: flex;
+  }
+
+  &__item {
+    text-align: center;
+    max-width: 390px;
+    // width: 390px;
+    margin-bottom: 30px;
+  }
+}
+.item {
+  &__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 400px;
+    margin-bottom: 70px;
+  }
+
+  &__title {
+    width: 385px;
+    padding: 50px 0 0 0;
+    text-transform: uppercase;
+    // font-family: $fontFamily-second;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: center;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 6px;
+      top: 0;
+      left: 0;
+      border-radius: 48px;
+      background: #7b71ee;
+      box-shadow: 0px 0px 4px 0px rgba(56, 219, 255, 0.5);
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background: url('../img/our-brands/vector.png') 0 0 repeat;
+    }
+
+    &.left {
+      &::after {
+        background: #06d6df;
+      }
+    }
+    &.right {
+      &::after {
+        background: #f00afe;
+      }
+    }
+  }
+
+  &__text {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 29px;
+    letter-spacing: 0.01em;
+    text-align: center;
+    opacity: 0.8;
   }
 }

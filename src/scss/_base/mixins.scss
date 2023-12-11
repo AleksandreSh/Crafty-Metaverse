@@ -27,6 +27,11 @@
     @content;
   }
 }
+@mixin screen-xxxl {
+  @media (max-width: #{$screen-xxxl}) {
+    @content;
+  }
+}
 
 $maxWidthContainer: 1620;
 @mixin adaptiveValue($property, $startSize, $minSize) {

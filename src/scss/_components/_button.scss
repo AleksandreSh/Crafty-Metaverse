@@ -13,11 +13,9 @@
   //   overflow: hidden;
   //   position: relative;
   // }
-  top: -2px;
-  right: 5px;
   display: inline-block;
   position: relative;
-  padding: 20px 58px;
+  padding: 21px 57px;
   background: -o-linear-gradient(351.27deg, #7a42f4 0, #4642f4 100%);
   background: linear-gradient(98.73deg, #7a42f4 0, #4642f4 100%);
   font-family: Helios, sans-serif;
@@ -29,4 +27,10 @@
   border-radius: 6px;
   cursor: pointer;
   text-transform: none;
+  @media (max-width: 1440px) {
+    .button {
+      font-size: 15px;
+      padding: 15px 30px;
+    }
+  }
 }

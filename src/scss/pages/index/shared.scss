@@ -1,17 +1,4 @@
 .shared {
-  &__con {
-    display: flex;
-    flex: 1 1 auto;
-    position: relative;
-    right: -36px;
-    top: 0px;
-  }
-  // position: relative;
-  // height: 60vh;
-  // padding: 110px 0px;
-  // display: flex;
-  // align-items: center;
-  // background: url('../img/shared/back2.jpg') 0 0 no-repeat;
   position: relative;
   height: 1024px;
   padding: 110px 0px;
@@ -22,15 +9,25 @@
   background-size: cover;
   background-repeat: no-repeat;
 
-  &__body {
+  &__con {
+    padding: 0 0 0 47px;
+    display: flex;
+    flex: 1 1 auto;
     position: relative;
-
-    &-info {
-      max-width: 683px;
-      text-transform: uppercase;
-    }
+    top: 0px;
   }
 
+  &__body {
+    position: relative;
+    max-width: 683px;
+    text-transform: uppercase;
+  }
+  &__title {
+    margin-bottom: 15px;
+  }
+  &__subtitle {
+    margin: 0 0 60px;
+  }
   &__bg {
     position: absolute;
     width: 100%;
@@ -40,7 +37,12 @@
   }
 }
 
-.star-1 {
+.star {
   position: relative;
   top: 5px;
+
+  @include screen-xl {
+    width: 28.16px;
+    height: 28.16px;
+  }
 }
