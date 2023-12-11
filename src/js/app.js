@@ -16,7 +16,7 @@ import './modules/libs/swiper.js';
 
 // index.html
 
-// import './modules/main/';
+import './modules/main/header-sidebar.js';
 // import './modules/main/';
 // import './modules/main/';
 //</MODULES dynamic>===========================

@@ -1,7 +1,8 @@
 .roadmap {
+  overflow: hidden;
   background: #090812;
   position: relative;
-  padding: 110px 0;
+  padding: 220px 0 220px 0;
 
   &::before {
     content: '';
@@ -39,16 +40,24 @@
     }
   }
   &__body {
-    padding: 0 9.2% 0 11%;
+    padding: 0 11.6% 0 12.5%;
+    &-info {
+      margin-bottom: 95px;
+    }
   }
 
   &__title {
+    text-transform: uppercase;
     text-align: center;
-    margin-bottom: 90px;
+    margin-bottom: 20px;
   }
   &__subtitle {
-    font-family: Helios, sans-serif;
+    text-transform: uppercase;
     font-size: 45px;
+    text-align: center;
+    font-family: Helios, sans-serif;
+    font-weight: 900;
+    letter-spacing: 2px;
   }
 
   &__table {
@@ -65,12 +74,12 @@
   }
 
   &__move-item {
-    position: absolute !important;
+    position: absolute;
     width: 480px;
     height: 360px;
     top: 0;
     left: 0;
-
+    /////исправить класы(состояние)
     &::before {
       content: '';
       position: absolute;
@@ -82,52 +91,64 @@
     }
     &_1 {
       &::before {
+        z-index: 1;
         content: '';
         position: absolute;
-        width: 645px;
-        height: 649px;
-        top: 110px;
-        left: 150px;
-        background: url('../img/Road-map/first.png') 0 0/ 100% 100% no-repeat;
+        width: 520px;
+        height: 686px;
+        top: 196px;
+        left: 227px;
+        background: url('../img/Road-map/first.png') 0 0/ 100% no-repeat;
+        z-index: 1;
+        @media (max-width: 767px) {
+        }
+      }
+      @media (max-width: 425) {
       }
     }
     &_2 {
       &::before {
+        z-index: 1;
         content: '';
         position: absolute;
-        width: 645px;
-        height: 649px;
-        top: 460px;
-        left: 380px;
-        background: url('../img/Road-map/second.png') 0 0/ 100% 100% no-repeat;
+        width: 520px;
+        height: 686px;
+        top: 678px;
+        left: 460px;
+        background: url('../img/Road-map/second.png') 0 0/ 100% no-repeat;
       }
     }
     &_3 {
       &::before {
         content: '';
         position: absolute;
-        width: 645px;
+        width: 468px;
         height: 649px;
-        top: 1000px;
-        left: 180px;
-        background: url('../img/Road-map/third.png') 0 0/ 100% 100% no-repeat;
+        top: 1168px;
+        left: 235px;
+        background: url('../img/Road-map/third.png') 0 0/ 100% no-repeat;
+        z-index: 1;
       }
     }
     &_4 {
+      z-index: 1;
       &::before {
         content: '';
         position: absolute;
-        width: 645px;
+        width: 468px;
         height: 649px;
-        top: 1280px;
-        left: 380px;
-        background: url('../img/Road-map/forth.png') 0 0/ 100% 100% no-repeat;
+        top: 1748px;
+        left: 533px;
+        background: url('../img/Road-map/forth.png') 0 0/ 100% no-repeat;
+        @media (max-width: 1705px) {
+        }
       }
     }
+    ////////
   }
 
   &__item {
-    max-width: 480px;
+    max-width: 450px;
     &:nth-child(1) {
       margin-bottom: 140px;
     }
@@ -144,10 +165,10 @@
       position: relative;
       font-size: 22px;
       font-weight: 700;
-      max-width: 360px;
+      max-width: 282px;
       line-height: 140%;
 
-      margin-bottom: 18px;
+      margin-bottom: 20px;
     }
   }
 
@@ -175,5 +196,16 @@
         background: url('../img/Road-map/yes.svg') 0 0 no-repeat;
       }
     }
+  }
+}
+.more {
+  font-family: Helios, sans-serif;
+  font-size: 18;
+  padding: 20px;
+}
+.svg {
+  &-1 {
+    top: 10px;
+    right: 10px;
   }
 }

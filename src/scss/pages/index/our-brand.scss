@@ -1,3 +1,32 @@
-.brands {
+.brand {
   position: relative;
+  padding: 110px 0;
+
+  &__container {
+    position: relative;
+  }
+
+  &__body {
+    max-width: 1350px;
+    margin: 0px auto;
+  }
+
+  &__info {
+    text-align: center;
+    margin-bottom: 90px;
+  }
+  &__subtitle {
+    font-family: Helios, sans-serif;
+    font-size: 45px;
+  }
+  &__row {
+    display: flex;
+    margin: 0 -40px;
+    justify-content: space-between;
+  }
+  &__column {
+    flex: 0 0 30%;
+    padding: 0 40px;
+    display: flex;
+  }
 }

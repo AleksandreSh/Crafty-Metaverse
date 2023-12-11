@@ -17,6 +17,8 @@
 
 //Components
 @import '_components/_button';
+@import '_components/_bg';
+@import '_components/_title';
 
 //<PAGES STYLE>=====================================
 
@@ -25,4 +27,6 @@
 @import 'pages/index/about-us';
 @import 'pages/index/roadmap';
 @import 'pages/index/our-brand';
+@import 'pages/index/our-resourrces';
+@import 'pages/index/market';
 // @import '_base/extra.scss';

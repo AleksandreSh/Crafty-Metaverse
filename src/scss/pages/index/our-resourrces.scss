@@ -1,0 +1,32 @@
+.resources {
+  background-color: rgb(9, 8, 18);
+  position: relative;
+  padding: 110px 0 110px 0;
+  &__body {
+    margin: 0px auto;
+    position: relative;
+    max-width: 1350px;
+    &-info {
+      text-align: center;
+      text-transform: uppercase;
+    }
+  }
+  &__subtitle {
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: initial;
+    flex-direction: column;
+    &-left {
+      align-self: start;
+      box-sizing: content-box;
+      max-width: 450px;
+    }
+    &-right {
+      position: relative;
+    }
+  }
+}
