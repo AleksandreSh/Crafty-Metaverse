@@ -8,25 +8,57 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  z-index: -2;
+
+  @include screen-m {
+    height: 787px;
+    padding: 80px 0;
+  }
 
   &__con {
-    padding: 0 0 0 47px;
+    // padding: 0 0 0 47px;
+    // padding: 0px 0px 60px 0px;
+    padding: 0 0px 0px 60px;
     display: flex;
     flex: 1 1 auto;
     position: relative;
     top: 0px;
+
+    @include screen-m {
+      padding: 0px 0px 60px 18px;
+    }
   }
 
   &__body {
     position: relative;
-    max-width: 683px;
+    max-width: 801px;
     text-transform: uppercase;
+    padding-left: 72px;
+
+    @include screen-xl {
+      max-width: 506px;
+      padding-left: 25px;
+    }
+
+    @include screen-m {
+      max-width: 310px;
+      padding-left: 25px;
+    }
   }
   &__title {
+    // padding-top: 20px;
     margin-bottom: 15px;
+
+    @include screen-m {
+      padding-top: 20px;
+    }
   }
   &__subtitle {
     margin: 0 0 60px;
+
+    @include screen-m {
+      margin: 0 0 13px;
+    }
   }
   &__bg {
     position: absolute;

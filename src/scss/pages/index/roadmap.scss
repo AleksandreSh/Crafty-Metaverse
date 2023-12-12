@@ -4,6 +4,9 @@
   position: relative;
   padding: 220px 0 73px 0;
 
+  @media (max-width: 565px) {
+    padding: 88px 0 73px 0;
+  }
   &::before {
     content: '';
     position: absolute;
@@ -19,15 +22,18 @@
     width: 1376px;
     height: 1776px;
     top: 28%;
-    right: 0;
+    right: -15px;
     background: url('../img/Road-map/right.png') 0 0 no-repeat;
   }
 
   &__head {
     margin-bottom: 90px;
+    @media (max-width: 768px) {
+      margin-bottom: 125px;
+    }
   }
 
-  &__container {
+  &__con {
     position: relative;
     z-index: 5;
 
@@ -44,7 +50,11 @@
     }
   }
   &__body {
-    padding: 0 11.6% 0 12.5%;
+    padding: 0 12.6% 0 13.5%;
+
+    @media (max-width: 768px) {
+      padding: 0 1.5% 0 1.5%;
+    }
     &-info {
       margin-bottom: 95px;
     }
@@ -54,6 +64,9 @@
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 0px;
+    @media (max-width: 768px) {
+      margin-bottom: 15px;
+    }
   }
   &__subtitle {
     text-transform: uppercase;
@@ -62,9 +75,17 @@
     font-family: Helios, sans-serif;
     font-weight: 900;
     letter-spacing: 2px;
+    @media (max-width: 768px) {
+      font-size: 28px;
+      font-weight: 700;
+      line-height: 31px;
+      letter-spacing: 0em;
+      text-align: center;
+    }
   }
 
   &__table {
+    z-index: 5;
     display: flex;
     flex-direction: column;
     align-items: end;
@@ -94,7 +115,6 @@
 
       &:nth-child(1) {
         &::before {
-          z-index: 1;
           content: '';
           position: absolute;
           width: 520px;
@@ -104,9 +124,17 @@
           background: url('../img/Road-map/first.png') 0 0/ 100% no-repeat;
           z-index: 1;
           @media (max-width: 767px) {
+            left: 19%;
+            width: 384px;
+            height: 654px;
+            top: 25%;
           }
-        }
-        @media (max-width: 425) {
+          @media (max-width: 565px) {
+            left: 19%;
+            width: 384px;
+            height: 654px;
+            top: 25%;
+          }
         }
       }
 
@@ -117,11 +145,17 @@
           position: absolute;
           width: 520px;
           height: 686px;
-          top: 88%;
-          left: 95%;
+          top: 200%;
+          left: 165%;
           background: url('../img/Road-map/second.png') 0 0/ 100% no-repeat;
           @media (max-width: 1666px) {
             left: 55%;
+          }
+          @media (max-width: 767px) {
+            left: -18%;
+            width: 384px;
+            height: 654px;
+            top: 161%;
           }
         }
       }
@@ -133,9 +167,17 @@
           width: 551px;
           height: 649px;
           top: 785px;
-          left: 209px;
+          top: 1188px;
+          left: 542px;
           background: url('../img/Road-map/third.png') 0 0/ 100% no-repeat;
           z-index: 1;
+
+          @media (max-width: 767px) {
+            left: 22%;
+            width: 384px;
+            height: 654px;
+            top: 305%;
+          }
         }
       }
 
@@ -146,10 +188,16 @@
           position: absolute;
           width: 468px;
           height: 649px;
-          top: 1387px;
-          left: 533px;
+          top: 1790px;
+          left: 860px;
           background: url('../img/Road-map/forth.png') 0 0/ 100% no-repeat;
           @media (max-width: 1705px) {
+          }
+          @media (max-width: 767px) {
+            left: -22%;
+            width: 384px;
+            height: 654px;
+            top: 436%;
           }
         }
       }
@@ -160,15 +208,27 @@
     max-width: 450px;
     &:nth-child(1) {
       margin-bottom: 140px;
+      @media (max-width: 768px) {
+        margin-bottom: 150px;
+      }
     }
     &:nth-child(2) {
       margin-bottom: 75px;
+      @media (max-width: 768px) {
+        margin-bottom: 82px;
+      }
     }
     &:nth-child(3) {
       margin-bottom: 20px;
+      @media (max-width: 768px) {
+        margin-bottom: 177px;
+      }
     }
     &:nth-child(4) {
       margin-bottom: 235px;
+      @media (max-width: 768px) {
+        margin-bottom: 50px;
+      }
     }
     &_left {
       align-self: start;
@@ -178,9 +238,19 @@
       font-size: 22px;
       font-weight: 700;
       max-width: 282px;
-      line-height: 140%;
+      line-height: 1.4;
 
       margin-bottom: 20px;
+
+      @media (max-width: 768px) {
+        margin-bottom: 15px;
+        max-width: 250px;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 28px;
+        letter-spacing: 0em;
+        text-align: left;
+      }
     }
   }
 
@@ -189,13 +259,18 @@
       position: relative;
       line-height: 140%;
       font-size: 18px;
-
       padding-left: 36px;
       opacity: 0.8;
 
-      // span {
-      //   opacity: 0.8;
-      // }
+      @media (max-width: 768px) {
+        padding-top: 3px;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 21px;
+        letter-spacing: 0.01em;
+        text-align: left;
+      }
+
       &:not(:last-child) {
         margin-bottom: 15px;
       }
@@ -218,6 +293,11 @@
   font-family: Helios, sans-serif;
   font-size: 18px;
   padding: 20px;
+  @media (max-width: 768px) {
+    width: 112px;
+    font-size: 16px;
+    padding: 18px 37px 0 0;
+  }
 }
 .svg {
   &-1 {
