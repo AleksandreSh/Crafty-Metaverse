@@ -14,7 +14,7 @@
     height: 1776px;
     top: 0;
     left: 0;
-    background: url('../img/Road-map/left.png') 0 0 no-repeat;
+    background: url('../img/Road-map/left.svg') 0 0 no-repeat;
   }
   &::after {
     content: '';
@@ -23,7 +23,7 @@
     height: 1776px;
     top: 28%;
     right: -15px;
-    background: url('../img/Road-map/right.png') 0 0 no-repeat;
+    background: url('../img/Road-map/right.svg') 0 0 no-repeat;
   }
 
   &__head {
@@ -44,7 +44,7 @@
       height: 1450px;
       top: 180px;
       left: 48%;
-      background: url('../img/Road-map/middle.png') 0 0 no-repeat;
+      background: url('../img/Road-map/mid.svg') 0 0 no-repeat;
       transform: translate(-50%, 0px);
       z-index: -10;
     }
@@ -92,9 +92,6 @@
     position: relative;
 
     &-items {
-      // z-index: 100;
-      // height: 360px;
-      // margin-top: -360px;
     }
     &-item {
       position: absolute;
@@ -121,7 +118,7 @@
           height: 686px;
           top: 66%;
           left: 115%;
-          background: url('../img/Road-map/first.png') 0 0/ 100% no-repeat;
+          background: url('../img/Road-map/first.webp') 0 0/ 100% no-repeat;
           z-index: 1;
           @media (max-width: 767px) {
             left: 19%;
@@ -147,7 +144,7 @@
           height: 686px;
           top: 200%;
           left: 165%;
-          background: url('../img/Road-map/second.png') 0 0/ 100% no-repeat;
+          background: url('../img/Road-map/second.webp') 0 0/ 100% no-repeat;
           @media (max-width: 1666px) {
             left: 55%;
           }
@@ -169,7 +166,7 @@
           top: 785px;
           top: 1188px;
           left: 542px;
-          background: url('../img/Road-map/third.png') 0 0/ 100% no-repeat;
+          background: url('../img/Road-map/third.webp') 0 0/ 100% no-repeat;
           z-index: 1;
 
           @media (max-width: 767px) {
@@ -190,7 +187,7 @@
           height: 649px;
           top: 1790px;
           left: 860px;
-          background: url('../img/Road-map/forth.png') 0 0/ 100% no-repeat;
+          background: url('../img/Road-map/forth.webp') 0 0/ 100% no-repeat;
           @media (max-width: 1705px) {
           }
           @media (max-width: 767px) {

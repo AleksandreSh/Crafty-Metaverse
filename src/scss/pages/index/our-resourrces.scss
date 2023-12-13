@@ -1,32 +1,77 @@
 .resources {
   background-color: rgb(9, 8, 18);
   position: relative;
-  padding: 110px 0 110px 0;
+  padding: 92px 0 110px 0;
+  background-image: url(../img/our-resources/Ellipse.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
   &__body {
     margin: 0px auto;
     position: relative;
     max-width: 1350px;
-    &-info {
-      text-align: center;
-      text-transform: uppercase;
-    }
   }
+  &__info {
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+  }
+
   &__subtitle {
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 63px;
+    letter-spacing: 0em;
+    text-align: center;
   }
 
   &__container {
+    // display: flex;
+    // justify-content: space-between;
+    max-width: 1580px;
+    margin: 0 auto;
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    justify-content: initial;
-    flex-direction: column;
-    &-left {
-      align-self: start;
-      box-sizing: content-box;
-      max-width: 450px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    gap: 90px;
+
+    .container {
+      &__left {
+        position: relative;
+        text-align: center;
+        max-width: 680px;
+        padding: 0 0 0 79px;
+        height: 537px;
+      }
+      &__right {
+        position: relative;
+        &-img {
+        }
+      }
     }
-    &-right {
-      position: relative;
-    }
+  }
+
+  &__head {
+    text-transform: uppercase;
+  }
+
+  &__text {
+    font-family: Gilroy, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: center;
+    opacity: 0.6;
+  }
+
+  &__logo {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 26px;
   }
 }
