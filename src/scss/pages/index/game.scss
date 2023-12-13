@@ -1,0 +1,28 @@
+.game {
+  position: relative;
+  padding: 110px 0px;
+  display: flex;
+  background-image: url(../img/game/game-bg.webp);
+  align-items: center;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 1;
+
+  &__container {
+    width: 100%;
+    margin: 0 auto;
+
+    &-wrapper {
+      position: relative;
+      margin: 0 auto;
+      padding: 500px 0 180px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      max-width: 1920px;
+      width: 100%;
+      gap: 90px;
+    }
+  }
+}

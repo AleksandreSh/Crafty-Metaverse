@@ -55,7 +55,7 @@
     height: 560px;
     padding-top: 70px;
     text-transform: uppercase;
-    max-width: 668px;
+    max-width: 590px;
     position: relative;
     padding-left: 65px;
     @media (max-width: 425px) {
@@ -122,6 +122,22 @@
     }
   }
 }
+.container__capter {
+  display: flex;
+  margin-top: 16px;
+  margin-left: 5px;
+}
+
+.capter-slide {
+  display: none;
+}
+
+.capter-slide h4 {
+  margin: 0;
+  font-size: 18px;
+  color: white;
+}
+
 .progress {
   &__wrapper {
     width: 406px;

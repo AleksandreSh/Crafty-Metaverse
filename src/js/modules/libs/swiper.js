@@ -3,10 +3,10 @@ import Swiper from 'swiper/bundle';
 // import Swiper from 'swiper';
 document.addEventListener('DOMContentLoaded', function () {
   let swiperAbout = new Swiper('.swiper-container-1', {
-    loop: 0,
-    autoHeight: 0,
+    loop: false,
+    autoHeight: true,
     spaceBetween: 0,
-    centeredSlides: 0,
+    centeredSlides: false,
     speed: 500,
     mousewheel: {
       invert: 0
@@ -14,24 +14,26 @@ document.addEventListener('DOMContentLoaded', function () {
     pagination: {
       el: '.swiper-pagination',
       type: 'progressbar',
-      direction: 'horisontal'
+      direction: 'horizontal'
+    },
+    on: {
+      init: function () {
+        updateCapter(0);
+      },
+      slideChange: function () {
+        let activeIndex = this.activeIndex;
+
+        updateCapter(activeIndex);
+      }
     }
   });
-  let swiperAboutCarter = new Swiper('.swiper-container-2', {});
-  swiperAbout.controller.control = swiperAboutCarter;
-  swiperAboutCarter.controller.control = swiperAbout;
 
-  let swiper1 = new Swiper('#swiper1', {
-    slidesPerView: 0.9,
-    loop: true,
-    spaceBetween: 0,
-    navigation: false
-  });
+  function updateCapter(index) {
+    let capterSlides = document.querySelectorAll('.container__capter .capter-slide');
 
-  let swiper2 = new Swiper('#swiper2', {
-    slidesPerView: 3,
-    loop: true,
-    spaceBetween: 0,
-    navigation: false
-  });
+    capterSlides.forEach(function (slide) {
+      slide.style.display = 'none';
+    });
+    capterSlides[index].style.display = 'block';
+  }
 });

@@ -8,7 +8,7 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  z-index: -2;
+  z-index: 1;
 
   @include screen-m {
     height: 787px;
