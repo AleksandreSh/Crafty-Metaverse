@@ -141,10 +141,11 @@
 .progress {
   &__wrapper {
     width: 406px;
-    height: 23px;
-    overflow: hidden;
-    position: relative;
+    height: 60px;
 
+    // overflow: hidden;
+    position: relative;
+    padding-bottom: 82px;
     @media (max-width: 1024px) {
       width: auto;
     }
@@ -165,5 +166,17 @@
     font-weight: 700;
     letter-spacing: 1px;
     text-transform: uppercase;
+  }
+  &-bar-svg {
+    left: 62px;
+    top: 507px;
+    position: absolute;
+
+    @media (max-width: 1024px) {
+      top: 520px;
+    }
+    @media (max-width: 425px) {
+      left: 26px;
+    }
   }
 }
