@@ -1,0 +1,184 @@
+.team {
+  position: relative;
+  padding: 140px 0 0 0;
+  background: url('../img/our-team/lines.webp') 0 0 no-repeat;
+  //   background: #0A0117;
+
+  &__con {
+    position: relative;
+  }
+
+  &__info {
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 50px;
+  }
+
+  &__column {
+    @media (max-width: 1440px) {
+      flex: 0 0 50%;
+    }
+
+    @media (max-width: 768px) {
+      flex: 0 0 100%;
+      &:not(:last-child) {
+        margin-bottom: 70px;
+      }
+    }
+
+    .card {
+      margin: 0px auto;
+      max-width: 400px;
+
+      display: flex;
+      flex-direction: column;
+
+      &__img {
+        margin-bottom: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 420px;
+      }
+
+      &__profession {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.4;
+        text-align: center;
+        opacity: 0.6;
+      }
+
+      &__name {
+        font-size: 45px;
+        font-weight: 700;
+        line-height: 63px;
+        letter-spacing: 0em;
+        text-align: center;
+        text-transform: uppercase;
+      }
+
+      &__social {
+        display: flex;
+        justify-content: center;
+
+        .social {
+          &__item {
+            &:not(:last-child) {
+              margin-right: 15px;
+            }
+            list-style-type: none;
+          }
+
+          &__link {
+            padding: 10px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 18px;
+            width: 48px;
+            height: 48px;
+            background: #00dade00;
+            border: 1px solid #767193;
+            transition: all 0.3s ease 0s;
+
+            &:hover {
+              background: #56ffeb;
+            }
+
+            @media (max-width: 425px) {
+              width: 48px;
+              height: 48px;
+              border-radius: 14px;
+              padding: 5px;
+            }
+          }
+        }
+      }
+    }
+    &:nth-child(1) {
+      .card {
+        &__img {
+        }
+
+        &__name {
+          color: #56ffeb;
+        }
+
+        &__text {
+        }
+      }
+    }
+    &:nth-child(2) {
+      margin-top: 15px;
+      .card {
+        &__img {
+          order: 2;
+        }
+
+        &__name {
+          color: #2c4dff;
+        }
+
+        &__text {
+          order: 1;
+        }
+      }
+    }
+    &:nth-child(3) {
+      margin-top: 100px;
+      .card {
+        &__img {
+        }
+
+        &__name {
+          color: #bf3aff;
+        }
+
+        &__text {
+        }
+      }
+    }
+    &:nth-child(4) {
+      .card {
+        &__img {
+          order: 2;
+        }
+
+        &__name {
+          color: #fb41ff;
+        }
+
+        &__text {
+        }
+      }
+    }
+  }
+  &::after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 1381px;
+    height: 1035px;
+    top: 0;
+    right: 0;
+    background: url('../img/our-team/bg2.webp') 0 0 no-repeat;
+  }
+  &::before {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 1062px;
+    height: 1137px;
+    top: 0;
+    left: 0;
+    background: url('../img/our-team/bg.webp') 0 0 no-repeat;
+  }
+}
