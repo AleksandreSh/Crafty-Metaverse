@@ -1,0 +1,112 @@
+.media {
+  position: relative;
+  padding: 110px 0 100px 0;
+  background: url('../img/social-media/bg.png') 0 0 no-repeat;
+
+  &__con {
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 978px;
+      height: 1026px;
+      top: -20%;
+      right: 50%;
+      transform: translate(50%, 0px);
+      background: url('../img/social-media/2.png') 0 0 no-repeat;
+    }
+  }
+
+  &__body {
+    position: relative;
+    margin: 0px auto;
+    max-width: 1250px;
+    @media (max-width: 1220px) {
+      max-width: 1100px;
+    }
+  }
+
+  &__info {
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  &__subtitle {
+  }
+
+  &__swiper {
+    display: flex;
+    justify-content: center;
+  }
+  .swiper-wrapper {
+    z-index: 10;
+    @media (min-width: 768px) {
+      display: flex;
+      //   justify-content: space-between;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    @media (max-width: 1220px) {
+      row-gap: 40px;
+    }
+    .swiper-slide {
+      //   display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 400px;
+      max-width: 280px;
+
+      @media (max-width: 1220px) {
+        flex: 0 0 50%;
+        max-width: 300px;
+      }
+
+      @media (max-width: 768px) {
+        flex: 0 0 auto;
+        text-align: center;
+      }
+      @media (max-width: 425px) {
+        min-height: 266px;
+        max-width: 192px;
+      }
+
+      .media__item {
+        display: inline-block;
+        position: relative;
+
+        img {
+          max-width: 100%;
+        }
+      }
+
+      &:nth-child(1) {
+      }
+      &:nth-child(1) {
+      }
+      &:nth-child(1) {
+      }
+      &:nth-child(1) {
+      }
+    }
+  }
+  &::before {
+    content: '';
+    position: absolute;
+    width: 1027px;
+    height: 1274px;
+    top: 0;
+    left: -15px;
+    background: url('../img/social-media/1.png') 0 0 no-repeat;
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    width: 1089px;
+    height: 1411px;
+    top: 0;
+    right: -15px;
+    background: url('../img/social-media/3.png') 0 0 no-repeat;
+  }
+}

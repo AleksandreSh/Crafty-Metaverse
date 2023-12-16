@@ -2,7 +2,7 @@
   position: relative;
   //   padding: 110px 0px 155px 0px;
   padding: 110px 0px 0px 0px;
-  display: flex;
+  // display: flex;
   background-image: url(../img/Game/game-bg.webp);
   align-items: center;
   background-position: center;
@@ -12,6 +12,46 @@
 
   @media (max-width: 1440px) {
     padding: 0px 0px 0px 0px;
+  }
+
+  .swiper-baner {
+    z-index: 1000;
+    // position: absolute;
+    top: -170px;
+    width: 100vh;
+    left: -90px;
+    overflow: hidden;
+
+    transform: rotate(-9.09deg);
+    background: rgba(255, 255, 255, 0.04);
+
+    backdrop-filter: blur(200px);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    text-transform: uppercase;
+    .swiper {
+      transform: rotate(40deg);
+      &-container {
+        width: 100vh;
+        //   height: 300px;
+        width: fit-content;
+        display: flex;
+        position: relative;
+        transform: translate3d(var(--move-initial), 0, 0);
+        animation: 12s linear infinite marquee;
+        white-space: nowrap;
+      }
+      &-slide {
+        .text-large {
+          font-size: 200px;
+        }
+      }
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+      display: none !important;
+    }
   }
 
   &__container {
@@ -175,4 +215,11 @@
   @media (max-width: 567px) {
     margin-bottom: 27px;
   }
+}
+.star-2 {
+  top: 15px;
+  position: relative;
+}
+.second {
+  background-color: black;
 }

@@ -109,7 +109,38 @@
           -webkit-transform: translate(-50%, -50%);
           -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-          background: #c78cff;
+          // background: #c78cff;
+          background-image: url(../img/our-resources/Ellipse-4.svg);
+          mix-blend-mode: hard-light;
+          -webkit-filter: blur(100px);
+          filter: blur(100px);
+          width: 367.01px;
+          height: 362.63px;
+          z-index: 500;
+
+          @media (max-width: 1440px) {
+            width: 440px;
+            height: 377px;
+          }
+          @media (max-width: 1024px) {
+            margin-bottom: 50px;
+          }
+          @media (max-width: 576px) {
+            margin-bottom: 50px;
+            width: 375px;
+            height: 266px;
+          }
+        }
+        &::after {
+          content: '';
+          position: absolute;
+          top: 50%;
+          left: 25%;
+          -webkit-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+          // background: #c78cff;
+          background-image: url(../img/our-resources/Ellipse-4.png);
           mix-blend-mode: hard-light;
           -webkit-filter: blur(100px);
           filter: blur(100px);

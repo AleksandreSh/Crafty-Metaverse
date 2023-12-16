@@ -17,6 +17,8 @@ import './modules/libs/swiper.js';
 // index.html
 
 import './modules/main/header-sidebar.js';
-// import './modules/main/';
+// import './modules/main/faq.js/';
+
 // import './modules/main/';
 //</MODULES dynamic>===========================
+ç;

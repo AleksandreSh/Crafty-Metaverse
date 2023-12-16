@@ -1,6 +1,10 @@
 .faq {
+  padding: 465px 0 100px 0;
   position: relative;
 
+  @media (max-width: 768px) {
+    padding: 150px 0 60px 0;
+  }
   &__con {
     display: flex;
     position: relative;
@@ -11,23 +15,47 @@
   &__body {
     position: relative;
     background: linear-gradient(360deg, rgba(58, 78, 255, 0.15) 0%, rgba(156, 58, 255, 0.44) 100%);
-    max-width: 1300px;
+    // max-width: 1300px;
+    width: 1320px;
     margin: 0px auto;
     padding: 4px;
-    z-index: 55;
 
     clip-path: polygon(8% 0, 80% 0%, 100% 0, 100% 100%, 80% 100%, 20% 100%, 0 100%, 0 6%);
+
+    @media (max-width: 1440px) {
+      margin: 0 20px;
+    }
+    @media (max-width: 425px) {
+      margin: 0 10px;
+
+      //   clip-path: polygon(8% 0, 80% 0%, 100% 0, 100% 100%, 80% 100%, 20% 100%, 0 100%, 0 3%);
+    }
   }
   &__head {
     text-align: center;
   }
 
+  &__subtitle {
+    margin-bottom: 60px;
+  }
+
   &__container {
-    padding: 95px 50px 95px 100px;
-    background-color: #18072d;
+    padding: 95px 20px 95px 100px;
+    // background-color: #18072d;
 
     clip-path: polygon(8% 0, 80% 0%, 100% 0, 100% 100%, 80% 100%, 20% 100%, 0 100%, 0 6%);
     position: relative;
+    background: #18072d url('../img/9.faq/2.png') 100% 100% no-repeat;
+
+    @media (max-width: 1440px) {
+      padding: 60px 50px 60px 60px;
+    }
+    @media (max-width: 768px) {
+      padding: 40px 30px 30px 30px;
+    }
+    @media (max-width: 425px) {
+      padding: 30px 10px 20px 20px;
+    }
   }
 
   &__info {
@@ -41,7 +69,7 @@
         text-align-last: left;
         background-color: transparent;
         color: #fff;
-        padding: 10px 50px 51px 10px;
+        padding: 10px 47px 35px 10px;
 
         font-size: 30px;
         font-weight: 700;
@@ -49,15 +77,39 @@
         text-transform: uppercase;
         border-bottom: 1px solid rgba(255, 255, 255, 0.5);
         margin-bottom: 15px;
+
+        @media (max-width: 425px) {
+          font-size: 16px;
+          font-weight: 700;
+          line-height: 22px;
+          letter-spacing: 0em;
+          text-align: left;
+        }
       }
 
       &__text {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-out;
+        &._active {
+          max-height: 500px;
+          overflow: visible;
+        }
+
         font-size: 24px;
-        color: rgba(255, 255, 255, 0.9);
+        opacity: 0.6;
         font-weight: 300;
         line-height: 1.4;
         margin-bottom: 50px;
         padding-left: 10px;
+
+        @media (max-width: 425px) {
+          font-size: 16px;
+          font-weight: 300;
+          line-height: 26px;
+          letter-spacing: 0em;
+          text-align: left;
+        }
       }
     }
   }
@@ -72,6 +124,7 @@
     background: url('../img/FAQ/1.png') 0 0 no-repeat;
   }
   &::after {
+    z-index: -1;
     content: '';
     position: absolute;
     width: 1180px;

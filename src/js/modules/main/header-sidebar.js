@@ -10,3 +10,16 @@ function burger() {
   }
 }
 burger();
+
+document.addEventListener('DOMContentLoaded', function () {
+  const infoItems = document.querySelectorAll('.info__item');
+
+  infoItems.forEach(function (item) {
+    const btn = item.querySelector('.info__btn');
+    const textContainer = item.querySelector('.info__text');
+
+    btn.addEventListener('click', function () {
+      textContainer.classList.toggle('_active');
+    });
+  });
+});
