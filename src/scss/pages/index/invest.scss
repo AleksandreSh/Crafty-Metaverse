@@ -21,10 +21,13 @@
     &-top {
       margin-bottom: 225px;
       @media (max-width: 1150px) {
-        margin-bottom: 299px;
+        margin-bottom: 275px;
+      }
+      @media (max-width: 1150px) {
+        margin-bottom: 110px;
       }
       @media (max-width: 425px) {
-        margin-bottom: 350px;
+        margin-bottom: 50px;
       }
     }
     &-bottom {
