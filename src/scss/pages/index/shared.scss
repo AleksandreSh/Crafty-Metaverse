@@ -9,6 +9,24 @@
   background-size: cover;
   background-repeat: no-repeat;
   z-index: 1;
+  &::before {
+    content: '';
+    position: absolute;
+    width: 1695px;
+    height: 1005px;
+    top: 412px;
+    left: -15px;
+    background: url(../img/shared/1.webp) 0 no-repeat;
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    width: 1847px;
+    height: 1264px;
+    top: -158px;
+    right: 25%;
+    background: url(../img/shared/2.webp) 0 no-repeat;
+  }
 
   @include screen-m {
     height: 787px;
