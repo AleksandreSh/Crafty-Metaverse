@@ -7,7 +7,24 @@
   height: 1030px;
   background: url('../img/about-us/backImg.webp') 25% 0 no-repeat;
   background-size: cover;
-
+  &::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 145px;
+    left: -29%;
+    background: url(../img/about-us/blur-for-text.webp) 0 no-repeat;
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 145px;
+    right: -40%;
+    background: url(../img/about-us/blur-for-img.webp) 0 no-repeat;
+  }
   @include screen-xxl {
     height: 800px;
   }
@@ -30,6 +47,7 @@
     flex: 1 1 auto;
     position: relative;
     z-index: 2;
+
     @media (max-width: 425px) {
       padding: 0 0px 0px 30px;
     }
