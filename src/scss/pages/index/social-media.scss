@@ -2,6 +2,9 @@
   position: relative;
   padding: 110px 0 100px 0;
   background: url('../img/social-media/bg.png') 0 0 no-repeat;
+  @media (max-width: 425px) {
+    padding: 0px 0 100px 0;
+  }
 
   &__con {
     position: relative;
