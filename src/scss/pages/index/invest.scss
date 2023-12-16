@@ -6,6 +6,10 @@
   z-index: 1;
   background: #090812;
 
+  @media (max-width: 425px) {
+    padding: 58px 0 170px 0;
+  }
+
   &__con {
     position: relative;
   }
@@ -23,9 +27,31 @@
     &-bottom {
       position: relative;
       padding: 80px 100px 65px 170px;
-      float: right;
 
+      align-self: end;
       background: linear-gradient(90deg, rgba(58, 78, 255, 0) 0, rgba(156, 58, 255, 0.14) 100%);
+      &::before {
+        z-index: -1;
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        border-radius: 1px;
+        background: linear-gradient(180deg, rgba(58, 78, 255, 0) 0%, rgba(156, 58, 255, 0.14) 100%);
+        backdrop-filter: blur(15px);
+      }
+      @media (max-width: 1440px) {
+        padding: 50px 20px 50px 50px;
+      }
+      @media (max-width: 1024px) {
+        padding: 40px 20px 40px 40px;
+      }
+
+      @media (max-width: 425px) {
+        padding: 40px 20px 40px 20px;
+      }
     }
   }
 
@@ -37,29 +63,70 @@
 
     @media (max-width: 1150px) {
       flex-direction: column;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
     }
   }
 
   .container {
     &__left {
       display: flex;
-      //   padding: 65px 64px 100px 92px;
 
       padding-top: 68px;
-      /* padding-bottom: 257px; */
       margin-top: 100px;
       height: 420px;
       padding-left: 65px;
-
-      //   margin-top: 200px;
-      //   margin-left: 45px;
       padding-left: 65px;
-      /* padding-bottom: 257px; */
+      &::before {
+        content: '';
+        position: absolute;
+        width: 46px;
+        height: 46px;
+        bottom: 0;
+        left: 50%;
+        background: url('../img/invest/Star.svg') 0 0 no-repeat;
+        transform: translate(0px, 50%);
+      }
+
+      @media (max-width: 1150px) {
+        margin-top: 0;
+
+        &::before {
+          bottom: 40%;
+          left: 35%;
+          background: url('../img/invest/Star.svg') 0 0 no-repeat;
+        }
+      }
+      @media (max-width: 768px) {
+        padding: 40px 0px 200px 25px;
+        &::before {
+          bottom: 3%;
+          left: 68%;
+          background: url('../img/invest/Star.svg') 0 0 no-repeat;
+        }
+      }
+      @media (max-width: 425px) {
+        padding: 50px 0px 199px 25px;
+        &::before {
+          bottom: 11%;
+          left: 71%;
+          background: url('../img/invest/Star.svg') 0 0 no-repeat;
+        }
+      }
     }
     &__right {
       position: relative;
       margin-right: 5px;
       left: 50px;
+      @media (max-width: 768px) {
+        left: 0;
+      }
+      @media (max-width: 768px) {
+        margin-top: 50px;
+      }
+      @media (max-width: 425px) {
+        margin-top: -10px;
+      }
     }
 
     &__info {
@@ -82,13 +149,39 @@
         text-transform: uppercase;
         letter-spacing: 4px;
         margin-bottom: 30px;
+        @media (max-width: 425px) {
+          margin-bottom: 25px;
+        }
       }
 
       &-text {
         opacity: 0.6;
-        margin-bottom: 35px;
+        margin-bottom: 15px;
+
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+        letter-spacing: 0em;
+        text-align: left;
+
+        &-mobile {
+          display: none;
+          @media (max-width: 768px) {
+            display: inline-block;
+            opacity: 0.6;
+            margin-bottom: 20px;
+            width: 304px;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 26px;
+            letter-spacing: 0em;
+            text-align: left;
+            margin-bottom: 30px;
+          }
+        }
       }
     }
+
     &__text {
       opacity: 0.6;
       font-size: 20px;
@@ -96,6 +189,10 @@
       line-height: 32px;
       letter-spacing: 0em;
       text-align: left;
+      @media (max-width: 768px) {
+        display: none;
+        margin-bottom: 0;
+      }
     }
 
     &__body {
@@ -103,11 +200,27 @@
       text-align: start;
 
       &-left {
+        max-width: 400px;
+        margin-right: 50px;
         max-width: 445px;
       }
 
       &-right {
         max-width: 400px;
+
+        align-self: center;
+      }
+    }
+
+    &__head {
+      text-transform: uppercase;
+
+      @media (max-width: 768px) {
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 40px;
+        letter-spacing: 0em;
+        text-align: left;
       }
     }
   }
@@ -147,15 +260,16 @@
         }
 
         @media (max-width: 768px) {
-          top: 445px;
-          left: 75px;
-          height: 180px;
+          height: 105px;
+          left: 38px;
+          top: 342px;
         }
 
         @media (max-width: 425px) {
-          height: 130px;
-          left: 4px;
-          top: 294px;
+          height: 100px;
+
+          left: 37px;
+          top: 342px;
         }
       }
       .second {
@@ -175,9 +289,9 @@
         }
 
         @media (max-width: 425px) {
-          height: 158px;
-          top: 80px;
-          left: -30px;
+          height: 175px;
+          top: 95px;
+          left: -45px;
         }
       }
       .picture {
@@ -198,9 +312,9 @@
         }
 
         @media (max-width: 425px) {
-          height: 66px;
-          top: 180px;
-          left: 130px;
+          height: 68px;
+          top: 205px;
+          left: 134px;
         }
       }
       .money {
@@ -220,9 +334,9 @@
         }
 
         @media (max-width: 425px) {
-          height: 55px;
-          left: 10px;
-          top: 268px;
+          height: 69px;
+          left: -3px;
+          top: 299px;
         }
       }
       .chain {
@@ -241,9 +355,9 @@
           height: 50px;
         }
         @media (max-width: 425px) {
-          height: 45px;
-          top: 80px;
-          left: 133px;
+          height: 33px;
+          top: 110px;
+          left: 165px;
         }
       }
     }
@@ -281,4 +395,13 @@
   line-height: 32px;
   letter-spacing: 0em;
   text-align: left;
+  opacity: 0.6;
+
+  @media (max-width: 786px) {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
 }

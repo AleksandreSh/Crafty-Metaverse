@@ -58,18 +58,18 @@ const swiperMedia = new Swiper('.swiper', {
   loop: false
 });
 
-var swiper1 = new Swiper('#swiper1', {
+let swiper1 = new Swiper('#swiper1', {
   slidesPerView: 1,
   spaceBetween: 30,
+  loop: true,
   autoplay: {
-    delay: 500
-  },
-  speed: 1000,
-  effect: 'slide',
-  loop: true
+    delay: 5000
+  }
+
+  // loop: true
 });
 
-var swiper2 = new Swiper('#swiper2', {
+let swiper2 = new Swiper('#swiper2', {
   slidesPerView: 1,
   spaceBetween: 30,
   autoplay: {
