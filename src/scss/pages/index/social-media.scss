@@ -1,7 +1,7 @@
 .media {
   position: relative;
   padding: 110px 0 100px 0;
-  background: url('../img/social-media/bg.png') 0 0 no-repeat;
+  background: url('../img/social-media/bg.webp') 0 0 no-repeat;
   @media (max-width: 425px) {
     padding: 0px 0 100px 0;
   }
@@ -17,7 +17,7 @@
       top: -20%;
       right: 50%;
       transform: translate(50%, 0px);
-      background: url('../img/social-media/2.png') 0 0 no-repeat;
+      background: url('../img/social-media/2.webp') 0 0 no-repeat;
     }
   }
 
@@ -101,7 +101,7 @@
     height: 1274px;
     top: 0;
     left: -15px;
-    background: url('../img/social-media/1.png') 0 0 no-repeat;
+    background: url('../img/social-media/1.webp') 0 0 no-repeat;
   }
   &::after {
     content: '';
@@ -110,6 +110,6 @@
     height: 1411px;
     top: 0;
     right: -15px;
-    background: url('../img/social-media/3.png') 0 0 no-repeat;
+    background: url('../img/social-media/3.webp') 0 0 no-repeat;
   }
 }

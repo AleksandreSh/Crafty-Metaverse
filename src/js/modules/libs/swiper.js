@@ -36,44 +36,43 @@ document.addEventListener('DOMContentLoaded', function () {
     });
     capterSlides[index].style.display = 'block';
   }
-});
-
-const element = document.querySelector('.media__swiper');
-function checkScreenWidth() {
-  if (window.innerWidth < 767) {
-    element.classList.add('swiper');
-  } else {
-    element.classList.remove('swiper');
-  }
-}
-
-checkScreenWidth();
-window.addEventListener('resize', checkScreenWidth);
-
-const swiperMedia = new Swiper('.swiper', {
-  direction: 'horizontal',
-  autoHeight: true,
-  slidesPerView: 'auto',
-
-  loop: false
-});
-
-let swiper1 = new Swiper('#swiper1', {
-  slidesPerView: 1,
-  spaceBetween: 30,
-  loop: true,
-  autoplay: {
-    delay: 5000
+  const element = document.querySelector('.media__swiper');
+  function checkScreenWidth() {
+    if (window.innerWidth < 767) {
+      element.classList.add('swiper');
+    } else {
+      element.classList.remove('swiper');
+    }
   }
 
-  // loop: true
-});
+  checkScreenWidth();
+  window.addEventListener('resize', checkScreenWidth);
 
-let swiper2 = new Swiper('#swiper2', {
-  slidesPerView: 1,
-  spaceBetween: 30,
-  autoplay: {
-    delay: 5000
-  },
-  loop: true
+  const swiperMedia = new Swiper('.swiper', {
+    direction: 'horizontal',
+    autoHeight: true,
+    slidesPerView: 'auto',
+
+    loop: false
+  });
+
+  let swiper1 = new Swiper('#swiper1', {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    autoplay: {
+      delay: 5000
+    }
+
+    // loop: true
+  });
+
+  let swiper2 = new Swiper('#swiper2', {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    autoplay: {
+      delay: 5000
+    },
+    loop: true
+  });
 });
