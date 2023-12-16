@@ -127,7 +127,9 @@
     &:nth-child(2) {
       margin-top: 15px;
       .card {
-        flex-direction: column-reverse;
+        @media (max-width: 1440px) {
+          flex-direction: column-reverse;
+        }
         &__img {
           order: 2;
         }
