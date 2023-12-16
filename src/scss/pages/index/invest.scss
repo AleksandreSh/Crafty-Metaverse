@@ -7,7 +7,7 @@
   background: #090812;
 
   @media (max-width: 425px) {
-    padding: 58px 0 320px 0;
+    padding: 58px 0 155px 0;
   }
 
   &__con {
@@ -23,11 +23,13 @@
       @media (max-width: 1150px) {
         margin-bottom: 299px;
       }
+      @media (max-width: 425px) {
+        margin-bottom: 350px;
+      }
     }
     &-bottom {
       position: relative;
       padding: 80px 100px 65px 170px;
-
       align-self: end;
       background: linear-gradient(90deg, rgba(58, 78, 255, 0) 0, rgba(156, 58, 255, 0.14) 100%);
       &::before {
@@ -48,9 +50,9 @@
       @media (max-width: 1024px) {
         padding: 40px 20px 40px 40px;
       }
-
       @media (max-width: 425px) {
-        padding: 40px 20px 40px 20px;
+        padding: 67px 49px 28px 34px;
+        height: 450px;
       }
     }
   }
@@ -125,7 +127,8 @@
         margin-top: 50px;
       }
       @media (max-width: 425px) {
-        margin-top: -10px;
+        margin-top: -8px;
+        left: 15px;
       }
     }
 
@@ -135,6 +138,9 @@
       &-left {
         max-width: 440px;
         margin-right: 30px;
+        @media (max-width: 500px) {
+          width: 265px;
+        }
       }
       &-right {
         max-width: 400px;
@@ -178,6 +184,43 @@
             text-align: left;
             margin-bottom: 30px;
           }
+          @media (max-width: 425px) {
+            margin-bottom: 10px;
+          }
+        }
+      }
+
+      &-mobile {
+        display: none;
+        opacity: 0.6;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 32px;
+        letter-spacing: 0em;
+        text-align: left;
+
+        @media (max-width: 425px) {
+          display: flex;
+          margin-bottom: 20px;
+        }
+      }
+      &-mob {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 32px;
+        letter-spacing: 0em;
+        text-align: left;
+        opacity: 0.6;
+
+        @media (max-width: 786px) {
+          font-size: 20px;
+          font-weight: 400;
+          line-height: 32px;
+          letter-spacing: 0em;
+          text-align: left;
+        }
+        @media (max-width: 425px) {
+          display: none;
         }
       }
     }
@@ -198,17 +241,27 @@
     &__body {
       display: flex;
       text-align: start;
+      display: flex;
 
+      @media (max-width: 768px) {
+        flex-wrap: wrap;
+        flex-direction: column;
+      }
       &-left {
         max-width: 400px;
         margin-right: 50px;
         max-width: 445px;
+
+        @media (max-width: 425px) {
+          margin-right: 20px;
+        }
       }
 
       &-right {
         max-width: 400px;
-
         align-self: center;
+        @media (max-width: 425px) {
+        }
       }
     }
 
@@ -221,6 +274,9 @@
         line-height: 40px;
         letter-spacing: 0em;
         text-align: left;
+        margin-bottom: 15px;
+      }
+      @media (max-width: 425px) {
       }
     }
   }
@@ -376,6 +432,10 @@
     @media (min-width: 1921px) {
       left: 308px;
     }
+    // height: 400px;
+    // width: 642px;
+    // bottom: 383px;
+    // left: -126px;
   }
 
   &::before {
@@ -387,21 +447,5 @@
     top: 0;
     left: 0;
     background: url(../img/invest/fon.svg) 0 0 no-repeat;
-  }
-}
-.text {
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 32px;
-  letter-spacing: 0em;
-  text-align: left;
-  opacity: 0.6;
-
-  @media (max-width: 786px) {
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 32px;
-    letter-spacing: 0em;
-    text-align: left;
   }
 }
