@@ -23,3 +23,9 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 });
+function hideLogo() {
+  var logo = document.getElementById('logo');
+  var hiddenLogo = document.getElementById('hiddenLogo');
+  logo.classList.add('hidden');
+  hiddenLogo.classList.remove('hidden');
+}
