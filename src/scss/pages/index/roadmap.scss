@@ -148,8 +148,14 @@
           @media (max-width: 1666px) {
             left: 55%;
           }
+          @media (max-width: 1160px) {
+            left: 18%;
+          }
+          @media (max-width: 990px) {
+            left: 0%;
+          }
           @media (max-width: 767px) {
-            left: -18%;
+            left: 40%;
             width: 384px;
             height: 654px;
             top: 161%;
@@ -190,6 +196,12 @@
           background: url('../img/Road-map/forth.webp') 0 0/ 100% no-repeat;
           @media (max-width: 1705px) {
             left: 55%;
+          }
+          @media (max-width: 1160px) {
+            left: 18%;
+          }
+          @media (max-width: 990px) {
+            left: 0%;
           }
           @media (max-width: 767px) {
             left: -22%;
