@@ -21,13 +21,14 @@ document.addEventListener('DOMContentLoaded', function () {
     const textContainer = item.querySelector('.info__text');
 
     btn.addEventListener('click', function () {
+      btn.classList.toggle('_active');
       textContainer.classList.toggle('_active');
     });
   });
 });
 function hideLogo() {
-  var logo = document.getElementById('logo');
-  var hiddenLogo = document.getElementById('hiddenLogo');
+  let logo = document.getElementById('logo');
+  let hiddenLogo = document.getElementById('hiddenLogo');
   logo.classList.add('hidden');
   hiddenLogo.classList.remove('hidden');
 }

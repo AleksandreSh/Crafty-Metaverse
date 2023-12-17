@@ -80,6 +80,28 @@
         text-transform: uppercase;
         border-bottom: 1px solid rgba(255, 255, 255, 0.5);
         margin-bottom: 15px;
+
+        &::before,
+        &::after {
+          content: '';
+          position: absolute;
+          border-radius: 10px;
+          width: 34px;
+          height: 5px;
+          right: 7px;
+          top: 32px;
+          background-color: #fff;
+          transition: transform 0.3s ease 0s;
+        }
+        &::after {
+          transform: rotate(-90deg);
+        }
+
+        &._active {
+          &::after {
+            transform: rotate(0deg);
+          }
+        }
         @media (max-width: 1024px) {
           font-size: 16px;
           font-weight: 700;
