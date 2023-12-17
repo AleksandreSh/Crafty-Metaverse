@@ -16,6 +16,7 @@
     margin: 0px auto;
 
     &::before {
+      z-index: -1;
       content: '';
       position: absolute;
       width: 978px;
@@ -116,6 +117,7 @@
     }
   }
   &::after {
+    z-index: -1;
     content: '';
     position: absolute;
     width: 1113px;
