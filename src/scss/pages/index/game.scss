@@ -212,7 +212,7 @@
     top: -741px;
   }
   @media (max-width: 1024px) {
-    top: -670px;
+    top: -745px;
   }
   @media (max-width: 768px) {
     top: -30px;
@@ -240,18 +240,20 @@
     z-index: 1000;
     background-color: #000;
     border: none;
-    top: 39px;
+    top: -37px;
     left: -701px;
     @media (max-width: 1440px) {
-      top: -91px;
+      top: -172px;
     }
 
     @media (max-width: 1024px) {
-      top: -260px;
+      top: -173px;
     }
-
-    @media (max-width: 425px) {
-      top: -580px;
+    @media (max-width: 768px) {
+      top: 38px;
+    }
+    @media (max-width: 570px) {
+      top: -176px;
     }
 
     span {
