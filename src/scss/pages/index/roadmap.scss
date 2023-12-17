@@ -93,171 +93,171 @@
 
     &-items {
     }
-    &-item {
-      position: absolute;
-      width: 480px;
-      height: 360px;
-      top: 0;
-      left: 0;
+    // &-item {
+    //   position: absolute;
+    //   width: 480px;
+    //   height: 360px;
+    //   top: 0;
+    //   left: 0;
 
-      &::before {
-        content: '';
-        position: absolute;
-        width: 645px;
-        height: 649px;
-        top: 110px;
-        left: 150px;
-        z-index: -9;
-      }
+    //   &::before {
+    //     content: '';
+    //     position: absolute;
+    //     width: 645px;
+    //     height: 649px;
+    //     top: 110px;
+    //     left: 150px;
+    //     z-index: -9;
+    //   }
 
-      &:nth-child(1) {
-        &::before {
-          content: '';
-          position: absolute;
-          width: 520px;
-          height: 686px;
-          top: 66%;
-          left: 115%;
-          background: url('../img/Road-map/first.webp') 0 0/ 100% no-repeat;
-          z-index: 1;
-          @media (max-width: 767px) {
-            left: 19%;
-            width: 384px;
-            height: 654px;
-            top: 25%;
-          }
-          @media (max-width: 565px) {
-            left: 19%;
-            width: 384px;
-            height: 654px;
-            top: 25%;
-          }
-        }
-      }
+    //   &:nth-child(1) {
+    //     &::before {
+    //       content: '';
+    //       position: absolute;
+    //       width: 520px;
+    //       height: 686px;
+    //       top: 66%;
+    //       left: 115%;
+    //       background: url('../img/Road-map/first.webp') 0 0/ 100% no-repeat;
+    //       z-index: 1;
+    //       @media (max-width: 767px) {
+    //         left: 19%;
+    //         width: 384px;
+    //         height: 654px;
+    //         top: 25%;
+    //       }
+    //       @media (max-width: 565px) {
+    //         left: 19%;
+    //         width: 384px;
+    //         height: 654px;
+    //         top: 25%;
+    //       }
+    //     }
+    //   }
 
-      &:nth-child(2) {
-        &::before {
-          z-index: 1;
-          content: '';
-          position: absolute;
-          width: 520px;
-          height: 686px;
-          top: 200%;
-          left: 165%;
-          background: url('../img/Road-map/second.webp') 0 0/ 100% no-repeat;
-          @media (max-width: 1666px) {
-            left: 55%;
-          }
-          @media (max-width: 1160px) {
-            left: 18%;
-          }
-          @media (max-width: 990px) {
-            left: 0%;
-          }
-          @media (max-width: 767px) {
-            left: 40%;
-            width: 384px;
-            height: 654px;
-            top: 161%;
-          }
-        }
-      }
+    //   &:nth-child(2) {
+    //     &::before {
+    //       z-index: 1;
+    //       content: '';
+    //       position: absolute;
+    //       width: 520px;
+    //       height: 686px;
+    //       top: 200%;
+    //       left: 165%;
+    //       background: url('../img/Road-map/second.webp') 0 0/ 100% no-repeat;
+    //       @media (max-width: 1666px) {
+    //         left: 55%;
+    //       }
+    //       @media (max-width: 1160px) {
+    //         left: 18%;
+    //       }
+    //       @media (max-width: 990px) {
+    //         left: 0%;
+    //       }
+    //       @media (max-width: 767px) {
+    //         left: 40%;
+    //         width: 384px;
+    //         height: 654px;
+    //         top: 161%;
+    //       }
+    //     }
+    //   }
 
-      &:nth-child(3) {
-        &::before {
-          content: '';
-          position: absolute;
-          width: 551px;
-          height: 649px;
-          top: 785px;
-          top: 1188px;
-          left: 542px;
-          background: url('../img/Road-map/third.webp') 0 0/ 100% no-repeat;
-          z-index: 1;
+    //   &:nth-child(3) {
+    //     &::before {
+    //       content: '';
+    //       position: absolute;
+    //       width: 551px;
+    //       height: 649px;
+    //       top: 785px;
+    //       top: 1188px;
+    //       left: 542px;
+    //       background: url('../img/Road-map/third.webp') 0 0/ 100% no-repeat;
+    //       z-index: 1;
 
-          @media (max-width: 767px) {
-            left: 22%;
-            width: 384px;
-            height: 654px;
-            top: 305%;
-          }
-        }
-      }
+    //       @media (max-width: 767px) {
+    //         left: 22%;
+    //         width: 384px;
+    //         height: 654px;
+    //         top: 305%;
+    //       }
+    //     }
+    //   }
 
-      &:nth-child(4) {
-        z-index: 1;
-        &::before {
-          content: '';
-          position: absolute;
-          width: 468px;
-          height: 649px;
-          top: 1790px;
-          left: 860px;
-          background: url('../img/Road-map/forth.webp') 0 0/ 100% no-repeat;
-          @media (max-width: 1915px) {
-            left: 538px;
-          }
-          @media (max-width: 1705px) {
-            left: 55%;
-          }
-          @media (max-width: 1160px) {
-            left: 18%;
-          }
-          @media (max-width: 990px) {
-            left: 0%;
-          }
-          @media (max-width: 866px) {
-            left: -22%;
-            width: 384px;
-            height: 654px;
-            top: 460%;
-          }
-          @media (max-width: 565px) {
-            left: 538px;
-            top: 433%;
-            left: 143px;
-          }
-          @media (max-width: 390px) {
-            top: 436%;
-            left: -102px;
-          }
-          @media (max-width: 390px) {
-          }
-        }
-        @media (max-width: 1024px) {
-          background: url('../img/Road-map/forth.webp') 0 0/ 100% 100% no-repeat;
-          &::before {
-            content: '';
-            position: absolute;
-            width: 713px;
-            height: 728px;
-            top: 67%;
-            left: 23%;
-            background: url('../img/Road-map/forth.webp') 0 0/ 100% 100% no-repeat;
-          }
-        }
-        @media (max-width: 1650px) {
-          &::before {
-            top: 58.5%;
-            left: 28%;
-          }
-        }
-        @media (max-width: 768px) {
-          &::before {
-            top: 65%;
-            left: 2%;
-            background: url('../img/Road-map/forth.webp') 0 0/ 60% 60% no-repeat;
-          }
-        }
-        @media (max-width: 425px) {
-          &::before {
-            top: 71%;
-            left: 2%;
-            background: url('../img/Road-map/forth.webp') 0 0/ 50% 50% no-repeat;
-          }
-        }
-      }
-    }
+    //   &:nth-child(4) {
+    //     z-index: 1;
+    //     &::before {
+    //       content: '';
+    //       position: absolute;
+    //       width: 468px;
+    //       height: 649px;
+    //       top: 1790px;
+    //       left: 860px;
+    //       background: url('../img/Road-map/forth.webp') 0 0/ 100% no-repeat;
+    //       @media (max-width: 1915px) {
+    //         left: 538px;
+    //       }
+    //       @media (max-width: 1705px) {
+    //         left: 55%;
+    //       }
+    //       @media (max-width: 1160px) {
+    //         left: 18%;
+    //       }
+    //       @media (max-width: 990px) {
+    //         left: 0%;
+    //       }
+    //       @media (max-width: 866px) {
+    //         left: -22%;
+    //         width: 384px;
+    //         height: 654px;
+    //         top: 460%;
+    //       }
+    //       @media (max-width: 565px) {
+    //         left: 538px;
+    //         top: 433%;
+    //         left: 143px;
+    //       }
+    //       @media (max-width: 390px) {
+    //         top: 436%;
+    //         left: -102px;
+    //       }
+    //       @media (max-width: 390px) {
+    //       }
+    //     }
+    //     @media (max-width: 1024px) {
+    //       background: url('../img/Road-map/forth.webp') 0 0/ 100% 100% no-repeat;
+    //       &::before {
+    //         content: '';
+    //         position: absolute;
+    //         width: 713px;
+    //         height: 728px;
+    //         top: 67%;
+    //         left: 23%;
+    //         background: url('../img/Road-map/forth.webp') 0 0/ 100% 100% no-repeat;
+    //       }
+    //     }
+    //     @media (max-width: 1650px) {
+    //       &::before {
+    //         top: 58.5%;
+    //         left: 28%;
+    //       }
+    //     }
+    //     @media (max-width: 768px) {
+    //       &::before {
+    //         top: 65%;
+    //         left: 2%;
+    //         background: url('../img/Road-map/forth.webp') 0 0/ 60% 60% no-repeat;
+    //       }
+    //     }
+    //     @media (max-width: 425px) {
+    //       &::before {
+    //         top: 71%;
+    //         left: 2%;
+    //         background: url('../img/Road-map/forth.webp') 0 0/ 50% 50% no-repeat;
+    //       }
+    //     }
+    //   }
+    // }
   }
 
   &__item {

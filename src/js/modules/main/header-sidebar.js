@@ -10,6 +10,15 @@ function burger() {
       headerLogo.classList.toggle('_active');
     });
   }
+  let menuLinks = document.querySelectorAll('.menu__link');
+  menuLinks.forEach(function (link) {
+    link.addEventListener('click', function () {
+      document.body.classList.remove('_lock');
+      iconMenu.classList.remove('_active');
+      menuBody.classList.remove('_active');
+      headerLogo.classList.remove('_active');
+    });
+  });
 }
 burger();
 
@@ -21,11 +30,21 @@ document.addEventListener('DOMContentLoaded', function () {
     const textContainer = item.querySelector('.info__text');
 
     btn.addEventListener('click', function () {
-      btn.classList.toggle('_active');
+      infoItems.forEach(function (otherItem) {
+        if (otherItem !== item) {
+          const otherBtn = otherItem.querySelector('.info__btn');
+          const otherTextContainer = otherItem.querySelector('.info__text');
+
+          otherBtn.classList.remove('_active');
+          otherTextContainer.classList.remove('_active');
+        }
+      });
       textContainer.classList.toggle('_active');
+      btn.classList.toggle('_active');
     });
   });
 });
+
 function hideLogo() {
   let logo = document.getElementById('logo');
   let hiddenLogo = document.getElementById('hiddenLogo');

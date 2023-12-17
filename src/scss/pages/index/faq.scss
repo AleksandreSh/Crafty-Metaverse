@@ -92,6 +92,13 @@
           top: 32px;
           background-color: #fff;
           transition: transform 0.3s ease 0s;
+
+          @media (max-width: 1024px) {
+            width: 18px;
+            height: 2px;
+            right: 5px;
+            top: 16px;
+          }
         }
         &::after {
           transform: rotate(-90deg);
