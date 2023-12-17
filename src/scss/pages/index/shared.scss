@@ -17,24 +17,6 @@
       margin: 0 0 30px;
     }
   }
-  // &::before {
-  //   content: '';
-  //   position: absolute;
-  //   width: 1695px;
-  //   height: 1005px;
-  //   top: 412px;
-  //   left: -15px;
-  //   background: url(../img/shared/1.webp) 0 no-repeat;
-  // }
-  // &::after {
-  //   content: '';
-  //   position: absolute;
-  //   width: 1847px;
-  //   height: 1172px;
-  //   top: -255px;
-  //   right: 29%;
-  //   background: url(../img/shared/2.webp) 0 no-repeat;
-  // }
 
   @include screen-m {
     height: 787px;
@@ -43,8 +25,6 @@
 
   &__con {
     z-index: 4;
-    // padding: 0 0 0 47px;
-    // padding: 0px 0px 60px 0px;
     padding: 0 0px 0px 60px;
     display: flex;
     flex: 1 1 auto;

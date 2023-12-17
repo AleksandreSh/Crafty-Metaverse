@@ -1,19 +1,19 @@
 .team {
   position: relative;
   padding: 140px 0 0 0;
-  // background: linear-gradient(#0a0117, #0a0117), url('../img/our-team/lines.webp') 0 0 no-repeat;
+  background: url('../img/our-team/lines.webp') 0 0 no-repeat;
   z-index: 1;
-  background: #0a0117;
+
   // background: #7476ed;
   @media (max-width: 786px) {
-    padding: 60px 0;
-    background: url('../img/our-team/bgmob.webp') 0% 0%/100% no-repeat;
+    padding: 140px 0;
+    // background: url('../img/our-team/bgmob.webp') 0% 0%/100% no-repeat;
     &::after {
       width: 100%;
       height: 100%;
       top: 0;
       right: 0;
-      background: url('../img/our-team/bgmob1.webp') 0 0 repeat;
+      // background: url('../img/our-team/bgmob1.webp') 0 0 repeat;
     }
   }
   @media (max-width: 425px) {
@@ -221,7 +221,7 @@
     -ms-transform: rotate(-9.09deg);
     transform: rotate(6deg);
     // background: rgba(255, 255, 255, 0.04);
-    background-image: url(../img/Game/baner.png);
+    // background-image: url(../img/Game/baner.png);
     -webkit-backdrop-filter: blur(200px);
     backdrop-filter: blur(200px);
     border-top: 1px solid rgba(255, 255, 255, 0.5);
@@ -243,7 +243,8 @@
       z-index: 1000;
       background-color: #000;
       border: none;
-      top: 1322px;
+
+      top: 1358px;
       left: -461px;
       @media (max-width: 1440px) {
         top: 1920px;
@@ -279,7 +280,7 @@
     &__container {
       &-small {
         animation: 10s linear infinite baner;
-        background-image: url('../img/Game/baner.png');
+        // background-image: url('../img/Game/baner.png');
         width: -webkit-fit-content;
         width: -moz-fit-content;
         width: fit-content;
@@ -338,6 +339,40 @@
     }
   }
 }
-// <svg width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-// <path d="M11.1743 0.394525L12.0794 9.48862L20.9833 11.5482L11.8892 12.4532L9.82965 21.3571L8.92463 12.263L0.0207065 10.2035L9.1148 9.29845L11.1743 0.394525Z" fill="white"/>
-// </svg>
+.blur {
+  &__team {
+    :nth-child(1) {
+      z-index: -1;
+      position: absolute;
+      width: 1062px;
+      height: 1137px;
+      top: -112px;
+      left: -185px;
+    }
+    :nth-child(2) {
+      z-index: -1;
+      position: absolute;
+      width: 1381px;
+      height: 1035px;
+      top: 0;
+      right: 607px;
+      @media (max-width: 786px) {
+        right: 236px;
+      }
+    }
+    :nth-child(3) {
+      z-index: -1;
+      width: 1381px;
+      height: 1035px;
+      top: -142px;
+      right: 0px;
+      @media (max-width: 786px) {
+        top: -140px;
+      }
+    }
+    @media (max-width: 425px) {
+      :nth-child(4) {
+      }
+    }
+  }
+}

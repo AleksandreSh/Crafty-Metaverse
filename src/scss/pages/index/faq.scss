@@ -1,7 +1,8 @@
 .faq {
   padding: 465px 0 100px 0;
   position: relative;
-
+  // background-image: url('../img/FAQ/curve.webp'), url('../img/FAQ/curve.png');
+  background: url('../img/FAQ/curve.webp') 0 -390px/100% 80% no-repeat;
   @media (max-width: 768px) {
     padding: 200px 0 60px 0;
   }
@@ -17,13 +18,17 @@
     background: linear-gradient(360deg, rgba(58, 78, 255, 0.15) 0%, rgba(156, 58, 255, 0.44) 100%);
     // max-width: 1300px;
     width: 1320px;
+    height: 1296px;
     margin: 0px auto;
     padding: 4px;
 
-    clip-path: polygon(8% 0, 80% 0%, 100% 0, 100% 100%, 80% 100%, 20% 100%, 0 100%, 0 6%);
+    clip-path: polygon(5% 0, 80% 0%, 100% 0, 100% 100%, 80% 100%, 20% 100%, 0 100%, 0 4%);
 
     @media (max-width: 1440px) {
       margin: 0 20px;
+    }
+    @media (max-width: 1024px) {
+      height: 1158px;
     }
     @media (max-width: 425px) {
       margin: 0 5px;
@@ -43,15 +48,18 @@
   }
 
   &__container {
-    padding: 95px 20px 95px 100px;
+    padding: 95px 20px 95px 80px;
     // background-color: #18072d;
-
-    clip-path: polygon(8% 0, 80% 0%, 100% 0, 100% 100%, 80% 100%, 20% 100%, 0 100%, 0 6%);
+    height: 1296px;
+    clip-path: polygon(5% 0, 80% 0%, 100% 0, 100% 100%, 80% 100%, 20% 100%, 0 100%, 0 4%);
     position: relative;
-    background: #18072d url('../img/FAQ/2.webp') 100% 100% no-repeat;
-
+    // background: #18072d url('../img/FAQ/2.webp') 100% 100% no-repeat;
+    background: #18072d;
     @media (max-width: 1440px) {
       padding: 60px 50px 60px 60px;
+    }
+    @media (max-width: 1440px) {
+      height: 1150px;
     }
     @media (max-width: 768px) {
       padding: 40px 30px 30px 30px;
@@ -64,16 +72,19 @@
   &__info {
     .info {
       &__item {
+        z-index: 5;
+        position: relative;
       }
 
       &__btn {
+        z-index: 10;
         position: relative;
         width: 100%;
         text-align-last: left;
         background-color: transparent;
         color: #fff;
         padding: 10px 47px 35px 10px;
-
+        // padding: 10px 47px 50px 10px;
         font-size: 30px;
         font-weight: 700;
         line-height: 1.4;
@@ -129,6 +140,11 @@
         &._active {
           max-height: 500px;
           overflow: visible;
+          // margin-bottom: 85px;
+          margin-bottom: 50px;
+          z-index: 5;
+          padding-left: 10px;
+          margin-top: 15px;
         }
 
         font-size: 24px;
@@ -158,7 +174,11 @@
     height: 1776px;
     top: 0;
     left: 0;
+    z-index: 4;
     background: url('../img/FAQ/1.webp') 0 0 no-repeat;
+    @media (max-width: 1024px) {
+      z-index: -1;
+    }
   }
   &::after {
     z-index: -1;
@@ -166,8 +186,9 @@
     position: absolute;
     width: 1180px;
     height: 1776px;
-    top: 0;
+    top: 353px;
     right: 0;
-    background: url('../img/FAQ/2.webp') 0 0 no-repeat;
+
+    background: url('../img/FAQ/blur-right.webp') 0 0 no-repeat;
   }
 }
