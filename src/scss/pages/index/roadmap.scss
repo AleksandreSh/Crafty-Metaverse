@@ -194,6 +194,9 @@
           top: 1790px;
           left: 860px;
           background: url('../img/Road-map/forth.webp') 0 0/ 100% no-repeat;
+          @media (max-width: 1915px) {
+            left: 538px;
+          }
           @media (max-width: 1705px) {
             left: 55%;
           }
@@ -203,11 +206,54 @@
           @media (max-width: 990px) {
             left: 0%;
           }
-          @media (max-width: 767px) {
+          @media (max-width: 866px) {
             left: -22%;
             width: 384px;
             height: 654px;
+            top: 460%;
+          }
+          @media (max-width: 565px) {
+            left: 538px;
+            top: 433%;
+            left: 143px;
+          }
+          @media (max-width: 390px) {
             top: 436%;
+            left: -102px;
+          }
+          @media (max-width: 390px) {
+          }
+        }
+        @media (max-width: 1024px) {
+          background: url('../img/Road-map/forth.webp') 0 0/ 100% 100% no-repeat;
+          &::before {
+            content: '';
+            position: absolute;
+            width: 713px;
+            height: 728px;
+            top: 67%;
+            left: 23%;
+            background: url('../img/Road-map/forth.webp') 0 0/ 100% 100% no-repeat;
+          }
+        }
+        @media (max-width: 1650px) {
+          &::before {
+            top: 58.5%;
+            left: 28%;
+          }
+        }
+        @media (max-width: 768px) {
+          &::before {
+            top: 65%;
+            left: 2%;
+            background: url('../img/Road-map/forth.webp') 0 0/ 60% 60% no-repeat;
+          }
+        }
+        @media (max-width: 425px) {
+          &::before {
+            top: 71%;
+            left: 2%;
+            background: url('../img/Road-map/forth.webp') 0 0/ 50% 50% no-repeat;
           }
         }
       }

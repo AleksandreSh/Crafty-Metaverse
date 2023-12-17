@@ -3,7 +3,7 @@
   //   padding: 110px 0px 155px 0px;
   padding: 110px 0px 0px 0px;
   // display: flex;
-  background-image: url(../img/Game/game-bg.webp);
+  background-image: url('../img/Game/game-bg.webp');
   align-items: center;
   background-position: center;
   background-size: cover;
@@ -189,25 +189,6 @@
 }
 
 .baner {
-  // z-index: 100;
-  //   position: absolute;
-  //   top: -609px;
-  //   left: -123px;
-  //   /* overflow: hidden; */
-  //   /* --offset: 20vw; */
-  //   /* --move-initial: calc(-25% + var(--offset)); */
-  //   /* --move-final: calc(-50% + var(--offset)); */
-  //   /* -webkit-transform: rotate(83deg); */
-  //   g): ;
-  //   */: ;
-  //   /* background: rgba(255, 255, 255, 0.04); */
-  //   transform: rotate(351deg);
-  //   background: rgba(255, 255, 255, 0.04);
-  //   -webkit-backdrop-filter: blur(200px);
-  //   backdrop-filter: blur(200px);
-  //   border-top: 1px solid rgba(255, 255, 255, 0.5);
-  //   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-  //   text-transform: uppercase;
   z-index: 100;
   position: absolute;
   top: -620px;
@@ -219,7 +200,8 @@
   -webkit-transform: rotate(-9.09deg);
   -ms-transform: rotate(-9.09deg);
   transform: rotate(-9.09deg);
-  background: rgba(255, 255, 255, 0.04);
+  // background: rgba(255, 255, 255, 0.04);
+  background-image: url(../img/Game/baner.png);
   -webkit-backdrop-filter: blur(200px);
   backdrop-filter: blur(200px);
   border-top: 1px solid rgba(255, 255, 255, 0.5);
@@ -281,6 +263,7 @@
   }
 
   &__container {
+    background-image: url('../img/Game/baner.png');
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
@@ -295,6 +278,19 @@
     white-space: nowrap;
     &-small {
       animation: 10s linear infinite baner;
+      background-image: url('../img/Game/baner.png');
+      width: -webkit-fit-content;
+      width: -moz-fit-content;
+      width: fit-content;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      position: relative;
+      -webkit-transform: translate3d(var(--move-initial), 0, 0);
+      transform: translate3d(var(--move-initial), 0, 0);
+      -webkit-animation: 12s linear infinite baner;
+      animation: 12s linear infinite baner;
+      white-space: nowrap;
     }
   }
 }
