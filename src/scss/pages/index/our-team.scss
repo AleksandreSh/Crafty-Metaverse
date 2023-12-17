@@ -253,7 +253,7 @@
         top: 1950px;
       }
       @media (max-width: 768px) {
-        top: 2820px;
+        top: 2923px;
       }
       @media (max-width: 425px) {
         top: 2743px;
@@ -340,6 +340,18 @@
   }
 }
 .blur {
+  @media (max-width: 390px) {
+    ::before {
+      content: '';
+      z-index: -1;
+      position: absolute;
+      width: 1062px;
+      height: 1137px;
+      top: -112px;
+      left: -185px;
+      background: url('../img/our-team/lines.png') no-repeat;
+    }
+  }
   &__team {
     :nth-child(1) {
       z-index: -1;
@@ -348,7 +360,12 @@
       height: 1137px;
       top: -112px;
       left: -185px;
+      @media (max-width: 786px) {
+        top: 133px;
+        left: -194px;
+      }
     }
+
     :nth-child(2) {
       z-index: -1;
       position: absolute;
@@ -360,6 +377,7 @@
         right: 236px;
       }
     }
+
     :nth-child(3) {
       z-index: -1;
       width: 1381px;
@@ -370,8 +388,40 @@
         top: -140px;
       }
     }
-    @media (max-width: 425px) {
-      :nth-child(4) {
+
+    :nth-child(4) {
+      display: none;
+      @media (max-width: 768px) {
+        display: block;
+        z-index: -1;
+        width: 1381px;
+        height: 1035px;
+        top: 649px;
+        right: 311px;
+      }
+    }
+
+    :nth-child(5) {
+      display: none;
+      @media (max-width: 768px) {
+        display: block;
+        z-index: -1;
+        width: 1381px;
+        height: 1366px;
+        top: 1108px;
+        right: -5px;
+      }
+    }
+
+    :nth-child(6) {
+      display: none;
+      @media (max-width: 768px) {
+        display: block;
+        z-index: -1;
+        width: 1381px;
+        height: 1159px;
+        top: 2117px;
+        right: 389px;
       }
     }
   }

@@ -43,6 +43,9 @@
 
         flex-direction: column;
       }
+      @media (max-width: 768px) {
+        padding: 376px 0 90px;
+      }
       @media (max-width: 566px) {
         padding: 137px 0 130px;
       }
