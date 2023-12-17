@@ -1,7 +1,7 @@
 function burger() {
   const iconMenu = document.querySelector('.menu__icon');
   const menuBody = document.querySelector('.menu__body');
-  const headerLogo = document.querySelector('.header__logo');
+  // const headerLogo = document.querySelector('.header__logo');
   if (iconMenu) {
     iconMenu.addEventListener('click', function (e) {
       document.body.classList.toggle('_lock');
@@ -45,9 +45,9 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
-function hideLogo() {
-  let logo = document.getElementById('logo');
-  let hiddenLogo = document.getElementById('hiddenLogo');
-  logo.classList.add('hidden');
-  hiddenLogo.classList.remove('hidden');
-}
+// function hideLogo() {
+//   let logo = document.getElementById('logo');
+//   let hiddenLogo = document.getElementById('hiddenLogo');
+//   logo.classList.add('hidden');
+//   hiddenLogo.classList.remove('hidden');
+// }
