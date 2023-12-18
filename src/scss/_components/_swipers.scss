@@ -1,8 +1,8 @@
 .swiper {
   &-container {
     padding-bottom: 75px;
-    &-1,
-    &-2 {
+    &-first,
+    &-second {
       overflow: hidden;
       position: relative;
       max-height: 370px;
@@ -32,15 +32,27 @@
     &-progressbar {
       &-fill {
         background-color: #7f5cff !important;
-        left: 18.5px !important;
-        top: 78px !important;
-        width: 4px;
-        height: 100% !important;
-        color: #7f5cff;
-        @media (max-width: 1024px) {
-          top: 5px !important;
-        }
+        right: 10px !important;
+        // left: 18.5px !important;
+        // top: 78px !important;
+        // width: 4px;
+        // height: 100% !important;
+        // color: #7f5cff;
+        // @media (max-width: 1024px) {
+        //   top: 70px !important;
+        // }
       }
     }
+  }
+}
+.swiper-pagination-progressbar.swiper-pagination-horizontal {
+  right: 10px !important;
+  top: 78px !important;
+}
+.progress-bar {
+  &-svg {
+    position: absolute;
+    top: 507px;
+    left: 62px;
   }
 }

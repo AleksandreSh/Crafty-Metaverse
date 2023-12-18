@@ -211,115 +211,6 @@
       }
     }
   }
-
-  .baner-bottom {
-    z-index: 100;
-    position: absolute;
-    top: -620px;
-    left: -76px;
-    overflow: hidden;
-    --offset: 20vw;
-    --move-initial: calc(-25% + var(--offset));
-    --move-final: calc(-50% + var(--offset));
-    -webkit-transform: rotate(-9.09deg);
-    -ms-transform: rotate(-9.09deg);
-    transform: rotate(6deg);
-    // background: rgba(255, 255, 255, 0.04);
-    // background-image: url(../img/Game/baner.png);
-    -webkit-backdrop-filter: blur(200px);
-    backdrop-filter: blur(200px);
-    border-top: 1px solid rgba(255, 255, 255, 0.5);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-    text-transform: uppercase;
-
-    @media (max-width: 1440px) {
-    }
-    @media (max-width: 1024px) {
-      top: -670px;
-    }
-    @media (max-width: 768px) {
-      top: -30px;
-    }
-    @media (max-width: 570px) {
-      top: -237px;
-    }
-    &.small {
-      z-index: 1000;
-      background-color: #000;
-      border: none;
-
-      top: 1315px;
-      left: -461px;
-      @media (max-width: 1440px) {
-        top: 1920px;
-      }
-      @media (max-width: 1024px) {
-        top: 1950px;
-      }
-      @media (max-width: 768px) {
-        top: 2923px;
-      }
-      @media (max-width: 425px) {
-        top: 2743px;
-      }
-
-      span {
-        font-size: 72px;
-
-        background: -webkit-linear-gradient(left, #21fcff, #fd40ff);
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-
-        @media (max-width: 768px) {
-          font-size: 33px;
-          font-weight: 700;
-          line-height: 46px;
-          letter-spacing: 0.01em;
-          text-align: right;
-        }
-      }
-    }
-
-    &__container {
-      &-small {
-        animation: 10s linear infinite baner;
-        // background-image: url('../img/Game/baner.png');
-        width: fit-content;
-        display: flex;
-        position: relative;
-        -webkit-transform: translate3d(var(--move-initial), 0, 0);
-        transform: translate3d(var(--move-initial), 0, 0);
-        -webkit-animation: 12s linear infinite baner;
-        animation: 12s linear infinite baner;
-        white-space: nowrap;
-      }
-    }
-    &::after {
-      z-index: -1;
-      content: '';
-      position: absolute;
-      width: 1381px;
-      height: 1035px;
-      top: 0;
-      right: 0;
-      background: url('../img/our-team/bg2.webp') 0 0 no-repeat;
-    }
-    &::before {
-      z-index: -1;
-      content: '';
-      position: absolute;
-      width: 1484px;
-      height: 1500px;
-      top: -145px;
-      left: -440px;
-      background: url('../img/our-team/1.webp') 0 0 no-repeat;
-      @media (max-width: 768px) {
-        top: -145px;
-        left: -440px;
-      }
-    }
-  }
 }
 .star {
   &-big {
@@ -340,16 +231,17 @@
   }
 }
 .blur {
-  @media (max-width: 390px) {
-    ::before {
+  .lines {
+    display: none;
+    @media (max-width: 390px) {
+      display: inline;
       content: '';
       z-index: -1;
       position: absolute;
       width: 1062px;
-      height: 1137px;
-      top: -112px;
-      left: -185px;
-      background: url('../img/our-team/lines.png') no-repeat;
+      height: 910px;
+      top: 869px;
+      left: -2px;
     }
   }
   &__team {
@@ -363,6 +255,12 @@
       @media (max-width: 786px) {
         top: 133px;
         left: -194px;
+      }
+      @media (max-width: 425px) {
+        top: 211px;
+        left: -178px;
+        width: 448px;
+        height: 968px;
       }
     }
 
@@ -401,6 +299,15 @@
         top: 649px;
         right: 311px;
       }
+      @media (max-width: 425px) {
+        display: block;
+        position: absolute;
+        z-index: -1;
+        width: 1387px;
+        height: 1035px;
+        top: 594px;
+        right: -97px;
+      }
     }
 
     :nth-child(5) {
@@ -412,6 +319,15 @@
         width: 1381px;
         height: 1366px;
         top: 1108px;
+        right: -5px;
+      }
+      @media (max-width: 768px) {
+        display: block;
+        z-index: -1;
+        position: absolute;
+        width: 586px;
+        height: 291px;
+        top: 1312px;
         right: -5px;
       }
     }
@@ -433,6 +349,119 @@
         top: 1992px;
         right: -136px;
       }
+    }
+  }
+}
+.baner-bottom {
+  z-index: 100;
+  position: absolute;
+  top: -620px;
+  left: -76px;
+  overflow: hidden;
+  --offset: 20vw;
+  --move-initial: calc(-25% + var(--offset));
+  --move-final: calc(-50% + var(--offset));
+  -webkit-transform: rotate(-9.09deg);
+  -ms-transform: rotate(-9.09deg);
+  transform: rotate(6deg);
+  // background: rgba(255, 255, 255, 0.04);
+  // background-image: url(../img/Game/baner.png);
+  -webkit-backdrop-filter: blur(200px);
+  backdrop-filter: blur(200px);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  text-transform: uppercase;
+
+  @media (max-width: 1440px) {
+  }
+  @media (max-width: 1024px) {
+    top: -670px;
+  }
+  @media (max-width: 768px) {
+    top: -30px;
+  }
+  @media (max-width: 570px) {
+    top: -237px;
+  }
+  &.small {
+    z-index: 1000;
+    background-color: #000;
+    border: none;
+
+    top: 1315px;
+    left: -461px;
+    @media (max-width: 1440px) {
+      top: 1920px;
+    }
+    @media (max-width: 1024px) {
+      font-size: 33px;
+      font-weight: 700;
+      line-height: 46px;
+      letter-spacing: 0.01em;
+      text-align: right;
+      top: 1950px;
+    }
+    @media (max-width: 768px) {
+      top: 2923px;
+    }
+    @media (max-width: 425px) {
+      top: 2810px;
+    }
+
+    span {
+      font-size: 72px;
+
+      background: -webkit-linear-gradient(left, #21fcff, #fd40ff);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+
+      @media (max-width: 1440px) {
+        font-size: 33px;
+        font-weight: 700;
+        line-height: 46px;
+        letter-spacing: 0.01em;
+        text-align: right;
+      }
+    }
+  }
+
+  &__container {
+    &-small {
+      animation: 10s linear infinite baner;
+      // background-image: url('../img/Game/baner.png');
+      width: fit-content;
+      display: flex;
+      position: relative;
+      -webkit-transform: translate3d(var(--move-initial), 0, 0);
+      transform: translate3d(var(--move-initial), 0, 0);
+      -webkit-animation: 12s linear infinite baner;
+      animation: 12s linear infinite baner;
+      white-space: nowrap;
+    }
+  }
+  &::after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 1381px;
+    height: 1035px;
+    top: 0;
+    right: 0;
+    background: url('../img/our-team/bg2.webp') 0 0 no-repeat;
+  }
+  &::before {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 1484px;
+    height: 1500px;
+    top: -145px;
+    left: -440px;
+    background: url('../img/our-team/1.webp') 0 0 no-repeat;
+    @media (max-width: 768px) {
+      top: -145px;
+      left: -440px;
     }
   }
 }

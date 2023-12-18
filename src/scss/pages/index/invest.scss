@@ -2,7 +2,7 @@
   padding: 240px 0 170px 0;
   display: flex;
   position: relative;
-  //   background: url(../img/invest/MaskGroup.webp) 0 100% no-repeat;
+  background: url(../img/invest/MaskGroup.webp) 0 100% no-repeat;
   z-index: 1;
   background: #090812;
 
@@ -17,7 +17,6 @@
   &__body {
     display: flex;
     flex-direction: column;
-
     &-top {
       margin-bottom: 225px;
       @media (max-width: 1150px) {
@@ -31,6 +30,7 @@
       }
     }
     &-bottom {
+      max-width: 1200px;
       position: relative;
       padding: 80px 100px 65px 170px;
       align-self: end;
@@ -64,19 +64,17 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 40px;
 
-    @media (max-width: 1150px) {
+    // gap: 40px;
+
+    @media (max-width: 1440px) {
       flex-direction: column;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
     }
   }
 
   .container {
     &__left {
       display: flex;
-
       padding-top: 68px;
       margin-top: 100px;
       height: 420px;

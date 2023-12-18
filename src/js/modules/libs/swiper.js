@@ -2,7 +2,7 @@
 import Swiper from 'swiper/bundle';
 // import Swiper from 'swiper';
 document.addEventListener('DOMContentLoaded', function () {
-  let swiperAbout = new Swiper('.swiper-container-1', {
+  let swiperAbout = new Swiper('.swiper-container-first', {
     loop: false,
     autoHeight: true,
     spaceBetween: 0,

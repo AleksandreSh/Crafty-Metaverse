@@ -263,3 +263,11 @@
   width: 100%;
   background: url('../img/our-brands/Vector.svg') 0 0 repeat;
 }
+.star-card {
+  position: absolute;
+  top: -12px;
+  left: 178px;
+  @media (max-width: 425px) {
+    display: none;
+  }
+}

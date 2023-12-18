@@ -14,7 +14,7 @@
     height: 1000px;
     top: 145px;
     left: -29%;
-    background: url(../img/about-us/blur-for-text.webp) 0 no-repeat;
+    background: url('../img/about-us/blur-for-text.webp') 0 no-repeat;
   }
   &::after {
     content: '';
@@ -187,10 +187,6 @@
     text-transform: uppercase;
   }
   &-bar-svg {
-    left: 62px;
-    top: 507px;
-    position: absolute;
-
     @media (max-width: 1024px) {
       top: 520px;
     }
