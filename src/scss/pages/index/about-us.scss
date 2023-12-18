@@ -27,11 +27,12 @@
   }
   @include screen-xxl {
     height: 800px;
+    background: url(../img/about-us/backImg.webp) 53% 0 no-repeat;
   }
 
   @include screen-l {
     height: 686px;
-    background: url(../img/about-us/backImg.webp) 45% 0 no-repeat;
+    background: url(../img/about-us/backImg.webp) 55% 0 no-repeat;
     background-size: cover;
   }
 

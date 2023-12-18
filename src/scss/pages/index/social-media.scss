@@ -116,14 +116,16 @@
     top: -192px;
     left: -15px;
     background: url('../img/social-media/1.webp') 0 0 no-repeat, url('../img/social-media/1.png') 0 0 no-repeat;
-    @media (max-width: 1024px) {
+    @media (max-width: 767px) {
+      top: -192px;
+      left: 377px;
+      background: url('../img/social-media/blur.png') 0 0 no-repeat;
     }
     @media (max-width: 425px) {
-      background: url('../img/social-media/blur.png') 0 0 no-repeat;
       width: 494px;
       height: 704px;
       top: -322px;
-      left: 15px;
+      left: 39px;
     }
   }
   &::after {
@@ -136,13 +138,17 @@
     right: 0px;
     background: url('../img/social-media/right.webp') 0 0 no-repeat, url('../img/social-media/right.png') 0 0 no-repeat;
 
-    @media (max-width: 1024px) {
+    @media (max-width: 767px) {
+      width: 723px;
+      height: 737px;
+      top: 264px;
+      right: 60px;
+      background: url('../img/social-media/blur2.png') 0 0 no-repeat;
     }
     @media (max-width: 425px) {
       width: 406px;
       height: 966px;
-      top: 129px;
-      background: url('../img/social-media/blur2.png') 0 0 no-repeat;
+      top: 145px;
     }
   }
 }

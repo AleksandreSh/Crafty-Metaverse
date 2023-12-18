@@ -195,6 +195,10 @@
             right: 18.4%;
             background: url('../img/our-team/Star.svg') 0 0 no-repeat;
             transform: translate(50%, 50%);
+            @media (max-width: 768px) {
+              bottom: 10.8%;
+              right: 38.4%;
+            }
           }
         }
 
@@ -281,11 +285,7 @@
       &-small {
         animation: 10s linear infinite baner;
         // background-image: url('../img/Game/baner.png');
-        width: -webkit-fit-content;
-        width: -moz-fit-content;
         width: fit-content;
-        display: -webkit-box;
-        display: -ms-flexbox;
         display: flex;
         position: relative;
         -webkit-transform: translate3d(var(--move-initial), 0, 0);
@@ -326,7 +326,7 @@
     display: inline;
     // margin-right: 59px;
     // margin-left: 59px;
-    @media (max-width: 768px) {
+    @media (max-width: 1024px) {
       display: none;
     }
   }
@@ -334,7 +334,7 @@
     display: none;
     margin-right: 59px;
     margin-left: 59px;
-    @media (max-width: 768px) {
+    @media (max-width: 1024px) {
       display: inline;
     }
   }
@@ -358,8 +358,8 @@
       position: absolute;
       width: 1062px;
       height: 1137px;
-      top: -112px;
-      left: -185px;
+      top: -42px;
+      left: 531px;
       @media (max-width: 786px) {
         top: 133px;
         left: -194px;
@@ -372,18 +372,19 @@
       width: 1381px;
       height: 1035px;
       top: 0;
-      right: 607px;
+      right: 444px;
       @media (max-width: 786px) {
-        right: 236px;
+        right: 0;
       }
     }
 
     :nth-child(3) {
+      position: absolute;
       z-index: -1;
       width: 1381px;
       height: 1035px;
       top: -142px;
-      right: 0px;
+      right: -623px;
       @media (max-width: 786px) {
         top: -140px;
       }
@@ -393,6 +394,7 @@
       display: none;
       @media (max-width: 768px) {
         display: block;
+        position: absolute;
         z-index: -1;
         width: 1381px;
         height: 1035px;
@@ -406,6 +408,7 @@
       @media (max-width: 768px) {
         display: block;
         z-index: -1;
+        position: absolute;
         width: 1381px;
         height: 1366px;
         top: 1108px;
@@ -418,6 +421,7 @@
       @media (max-width: 768px) {
         display: block;
         z-index: -1;
+        position: absolute;
         width: 1775px;
         height: 678px;
         top: 2117px;
