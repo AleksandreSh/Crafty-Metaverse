@@ -2,7 +2,8 @@
   padding: 465px 0 100px 0;
   position: relative;
   // background-image: url('../img/FAQ/curve.webp'), url('../img/FAQ/curve.png');
-  background: url('../img/FAQ/curve.webp') 0 -390px/100% 80% no-repeat;
+  background: url('../img/FAQ/curve.webp') 0 -390px/100% 80% no-repeat,
+    url('../img/FAQ/curve.png') 0 -390px/100% 80% no-repeat;
   @media (max-width: 768px) {
     padding: 200px 0 60px 0;
   }
@@ -16,9 +17,8 @@
   &__body {
     position: relative;
     background: linear-gradient(360deg, rgba(58, 78, 255, 0.15) 0%, rgba(156, 58, 255, 0.44) 100%);
-    // max-width: 1300px;
     width: 1320px;
-    height: 1296px;
+    height: 1310px;
     margin: 0px auto;
     padding: 4px;
 
@@ -28,14 +28,15 @@
       margin: 0 20px;
     }
     @media (max-width: 1024px) {
-      height: 1158px;
+      height: 1160px;
     }
     @media (max-width: 425px) {
       margin: 0 5px;
-
-      //   clip-path: polygon(8% 0, 80% 0%, 100% 0, 100% 100%, 80% 100%, 20% 100%, 0 100%, 0 3%);
+      height: 1060px;
+      clip-path: polygon(9% 0, 80% 0%, 100% 0, 100% 100%, 80% 100%, 20% 100%, 0 100%, 0 2%);
     }
   }
+
   &__head {
     text-align: center;
   }
@@ -48,24 +49,68 @@
   }
 
   &__container {
-    padding: 95px 20px 95px 80px;
-    // background-color: #18072d;
-    height: 1296px;
+    position: relative;
+    background: #18072d url('../img/FAQ/Vector.png') 0 0 repeat-y;
+    padding: 93px 20px 95px 77px;
+    height: 1300px;
     clip-path: polygon(5% 0, 80% 0%, 100% 0, 100% 100%, 80% 100%, 20% 100%, 0 100%, 0 4%);
     position: relative;
-    // background: #18072d url('../img/FAQ/2.webp') 100% 100% no-repeat;
-    background: #18072d;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 1222px;
+      height: 1776px;
+      top: -453px;
+      left: -357px;
+      z-index: -1;
+      background: url('../img/FAQ/1.webp') 0 0 no-repeat, url('../img/FAQ/1.png') 0 0 no-repeat;
+      @media (max-width: 1024px) {
+        top: -560px;
+        left: -537px;
+      }
+      @media (max-width: 425px) {
+        top: -547px;
+        left: -722px;
+      }
+    }
+    &::after {
+      z-index: -1;
+      content: '';
+      position: absolute;
+      width: 1180px;
+      height: 1776px;
+      top: -28px;
+      right: -456px;
+
+      background: url('../img/FAQ/blur-right.webp') 0 0 no-repeat, url('../img/FAQ/blur-right.png') 0 0 no-repeat;
+
+      @media (max-width: 1024px) {
+        right: -556px;
+      }
+      @media (max-width: 425px) {
+        background: url('../img/social-media/blur.png') 0 0 no-repeat;
+        width: 494px;
+        height: 704px;
+        top: 767px;
+        left: 15px;
+      }
+    }
+
     @media (max-width: 1440px) {
       padding: 60px 50px 60px 60px;
     }
-    @media (max-width: 1440px) {
+    @media (max-width: 1024px) {
       height: 1150px;
     }
     @media (max-width: 768px) {
       padding: 40px 30px 30px 30px;
     }
     @media (max-width: 425px) {
-      padding: 58px 13px 20px 3px;
+      background: #18072d url('../img/FAQ/Vector-mb.png') 0 0 repeat-y;
+      height: 1050px;
+      padding: 55px 13px 20px 3px;
+      clip-path: polygon(9% 0, 80% 0%, 100% 0, 100% 100%, 80% 100%, 20% 100%, 0 100%, 0 2%);
     }
   }
 
@@ -74,6 +119,12 @@
       &__item {
         z-index: 5;
         position: relative;
+        // &:not(:first-child) {
+        //   padding: 20px 47px 48px 10px;
+        // }
+        // &:nth-child(2) {
+        //   padding: 30px 47px 48px 10px;
+        // }
       }
 
       &__btn {
@@ -83,14 +134,13 @@
         text-align-last: left;
         background-color: transparent;
         color: #fff;
-        padding: 10px 47px 35px 10px;
-        // padding: 10px 47px 50px 10px;
+        padding: 25px 47px 48px 10px;
         font-size: 30px;
         font-weight: 700;
         line-height: 1.4;
         text-transform: uppercase;
         border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-        margin-bottom: 15px;
+        margin-bottom: 25px;
 
         &::before,
         &::after {
@@ -108,7 +158,7 @@
             width: 18px;
             height: 2px;
             right: 5px;
-            top: 16px;
+            top: 21px;
           }
         }
         &::after {
@@ -125,8 +175,10 @@
           font-weight: 700;
           line-height: 22px;
           letter-spacing: 0em;
-
-          text-align-last: center;
+        }
+        @media (max-width: 584px) {
+          text-align: left;
+          margin-bottom: 14px;
         }
         @media (max-width: 425px) {
           padding: 10px 47px 26px 10px;
@@ -137,23 +189,20 @@
         max-height: 0;
         overflow: hidden;
         transition: max-height 0.3s ease-out;
-        &._active {
-          max-height: 500px;
-          overflow: visible;
-          // margin-bottom: 85px;
-          margin-bottom: 50px;
-          z-index: 5;
-          padding-left: 10px;
-        }
-
         font-size: 24px;
         opacity: 0.6;
         font-weight: 300;
         line-height: 1.4;
-        margin-bottom: 50px;
         padding-left: 10px;
+        &._active {
+          transition: 1.3s;
+          max-height: 500px;
+          overflow: visible;
+          z-index: 5;
+          padding-left: 10px;
+        }
 
-        @media (max-width: 425px) {
+        @media (max-width: 768px) {
           font-size: 16px;
           font-weight: 300;
           line-height: 26px;
@@ -173,10 +222,10 @@
     height: 1776px;
     top: 0;
     left: 0;
-    z-index: 4;
+    z-index: -1;
     background: url('../img/FAQ/1.webp') 0 0 no-repeat;
-    @media (max-width: 1024px) {
-      z-index: -1;
+    @media (max-width: 425px) {
+      display: none;
     }
   }
   &::after {
@@ -189,5 +238,8 @@
     right: 0;
 
     background: url('../img/FAQ/blur-right.webp') 0 0 no-repeat;
+    @media (max-width: 425px) {
+      display: none;
+    }
   }
 }

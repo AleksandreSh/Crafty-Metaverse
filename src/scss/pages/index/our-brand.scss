@@ -1,14 +1,14 @@
 .brand {
   position: relative;
   padding: 110px 0 75px 0px;
-  background: url('../img/our-brands/Vector.svg') 0 0 repeat;
+  background-color: #18072d;
 
   @media (max-width: 425px) {
     padding: 75px 0 50px 0px;
   }
 
   &__bg {
-    z-index: -3;
+    z-index: 1;
     position: absolute;
     display: flex;
     opacity: 0.6;
@@ -126,7 +126,7 @@
 
   &__row {
     display: flex;
-    margin: 0 -12px;
+
     justify-content: space-between;
 
     @media (max-width: 1300px) {
@@ -137,6 +137,7 @@
 
   &__column {
     display: flex;
+    z-index: 2;
     @media (max-width: 425px) {
       padding-bottom: 7px;
     }
@@ -245,4 +246,8 @@
       text-align: center;
     }
   }
+}
+
+.blur {
+  background: url('../img/our-brands/Vector.svg') 0 0 repeat;
 }

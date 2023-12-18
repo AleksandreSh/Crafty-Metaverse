@@ -4,9 +4,37 @@
   position: relative;
   padding: 220px 0 73px 0;
 
+  &__bg {
+    @media (max-width: 540px) {
+      &::before {
+        content: '';
+        position: absolute;
+        width: 648px;
+        height: 875px;
+        top: 0;
+        left: 0px;
+        background: url('../img/Road-map/bg1-mob.png') 0 0 no-repeat, url('../img/Road-map/bg1-mob.webp') 0 0 no-repeat;
+        top: 961px;
+      }
+      &::after {
+        @media (max-width: 540px) {
+          position: absolute;
+          background: url('../img/Road-map/bg2-mob.png') 0 0 no-repeat,
+            url('../img/Road-map/bg2-mob.webp') 0 0 no-repeat;
+          content: '';
+          top: 1520px;
+          width: 450px;
+          height: 781px;
+          right: -79px;
+        }
+      }
+    }
+  }
+
   @media (max-width: 565px) {
     padding: 88px 0 73px 0;
   }
+
   &::before {
     content: '';
     position: absolute;
@@ -15,15 +43,28 @@
     top: 0;
     left: 0;
     background: url('../img/Road-map/left.svg') 0 0 no-repeat;
+    @media (max-width: 540px) {
+      background: url('../img/Road-map/bg1-mob.png') 0 0 no-repeat;
+      top: -200px;
+    }
   }
+
   &::after {
     content: '';
     position: absolute;
     width: 1376px;
     height: 1776px;
-    top: 28%;
+    top: 20%;
     right: -15px;
     background: url('../img/Road-map/right.svg') 0 0 no-repeat;
+    @media (max-width: 540px) {
+      background: url('../img/Road-map/bg2-mob.png') 0 0 no-repeat;
+      top: 483px;
+      width: 450px;
+      height: 1776px;
+      top: 28%;
+      right: -79px;
+    }
   }
 
   &__head {
@@ -47,8 +88,19 @@
       background: url('../img/Road-map/mid.svg') 0 0 no-repeat;
       transform: translate(-50%, 0px);
       z-index: -10;
+
+      @media (max-width: 768px) {
+        content: '';
+        position: absolute;
+        width: 717px;
+        height: 1533px;
+        top: 180px;
+        left: 93%;
+        background: url('../img/Road-map/mid-bg.png') 0 0 no-repeat;
+      }
     }
   }
+
   &__body {
     padding: 0 12.6% 0 13.5%;
 
@@ -64,10 +116,12 @@
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 0px;
+
     @media (max-width: 768px) {
       margin-bottom: 15px;
     }
   }
+
   &__subtitle {
     text-transform: uppercase;
     font-size: 45px;
@@ -93,171 +147,6 @@
 
     &-items {
     }
-    // &-item {
-    //   position: absolute;
-    //   width: 480px;
-    //   height: 360px;
-    //   top: 0;
-    //   left: 0;
-
-    //   &::before {
-    //     content: '';
-    //     position: absolute;
-    //     width: 645px;
-    //     height: 649px;
-    //     top: 110px;
-    //     left: 150px;
-    //     z-index: -9;
-    //   }
-
-    //   &:nth-child(1) {
-    //     &::before {
-    //       content: '';
-    //       position: absolute;
-    //       width: 520px;
-    //       height: 686px;
-    //       top: 66%;
-    //       left: 115%;
-    //       background: url('../img/Road-map/first.webp') 0 0/ 100% no-repeat;
-    //       z-index: 1;
-    //       @media (max-width: 767px) {
-    //         left: 19%;
-    //         width: 384px;
-    //         height: 654px;
-    //         top: 25%;
-    //       }
-    //       @media (max-width: 565px) {
-    //         left: 19%;
-    //         width: 384px;
-    //         height: 654px;
-    //         top: 25%;
-    //       }
-    //     }
-    //   }
-
-    //   &:nth-child(2) {
-    //     &::before {
-    //       z-index: 1;
-    //       content: '';
-    //       position: absolute;
-    //       width: 520px;
-    //       height: 686px;
-    //       top: 200%;
-    //       left: 165%;
-    //       background: url('../img/Road-map/second.webp') 0 0/ 100% no-repeat;
-    //       @media (max-width: 1666px) {
-    //         left: 55%;
-    //       }
-    //       @media (max-width: 1160px) {
-    //         left: 18%;
-    //       }
-    //       @media (max-width: 990px) {
-    //         left: 0%;
-    //       }
-    //       @media (max-width: 767px) {
-    //         left: 40%;
-    //         width: 384px;
-    //         height: 654px;
-    //         top: 161%;
-    //       }
-    //     }
-    //   }
-
-    //   &:nth-child(3) {
-    //     &::before {
-    //       content: '';
-    //       position: absolute;
-    //       width: 551px;
-    //       height: 649px;
-    //       top: 785px;
-    //       top: 1188px;
-    //       left: 542px;
-    //       background: url('../img/Road-map/third.webp') 0 0/ 100% no-repeat;
-    //       z-index: 1;
-
-    //       @media (max-width: 767px) {
-    //         left: 22%;
-    //         width: 384px;
-    //         height: 654px;
-    //         top: 305%;
-    //       }
-    //     }
-    //   }
-
-    //   &:nth-child(4) {
-    //     z-index: 1;
-    //     &::before {
-    //       content: '';
-    //       position: absolute;
-    //       width: 468px;
-    //       height: 649px;
-    //       top: 1790px;
-    //       left: 860px;
-    //       background: url('../img/Road-map/forth.webp') 0 0/ 100% no-repeat;
-    //       @media (max-width: 1915px) {
-    //         left: 538px;
-    //       }
-    //       @media (max-width: 1705px) {
-    //         left: 55%;
-    //       }
-    //       @media (max-width: 1160px) {
-    //         left: 18%;
-    //       }
-    //       @media (max-width: 990px) {
-    //         left: 0%;
-    //       }
-    //       @media (max-width: 866px) {
-    //         left: -22%;
-    //         width: 384px;
-    //         height: 654px;
-    //         top: 460%;
-    //       }
-    //       @media (max-width: 565px) {
-    //         left: 538px;
-    //         top: 433%;
-    //         left: 143px;
-    //       }
-    //       @media (max-width: 390px) {
-    //         top: 436%;
-    //         left: -102px;
-    //       }
-    //       @media (max-width: 390px) {
-    //       }
-    //     }
-    //     @media (max-width: 1024px) {
-    //       background: url('../img/Road-map/forth.webp') 0 0/ 100% 100% no-repeat;
-    //       &::before {
-    //         content: '';
-    //         position: absolute;
-    //         width: 713px;
-    //         height: 728px;
-    //         top: 67%;
-    //         left: 23%;
-    //         background: url('../img/Road-map/forth.webp') 0 0/ 100% 100% no-repeat;
-    //       }
-    //     }
-    //     @media (max-width: 1650px) {
-    //       &::before {
-    //         top: 58.5%;
-    //         left: 28%;
-    //       }
-    //     }
-    //     @media (max-width: 768px) {
-    //       &::before {
-    //         top: 65%;
-    //         left: 2%;
-    //         background: url('../img/Road-map/forth.webp') 0 0/ 60% 60% no-repeat;
-    //       }
-    //     }
-    //     @media (max-width: 425px) {
-    //       &::before {
-    //         top: 71%;
-    //         left: 2%;
-    //         background: url('../img/Road-map/forth.webp') 0 0/ 50% 50% no-repeat;
-    //       }
-    //     }
-    //   }
-    // }
   }
 
   &__item {
@@ -306,6 +195,12 @@
         line-height: 28px;
         letter-spacing: 0em;
         text-align: left;
+        // &:nth-child(1) {
+        //   max-width: 250px;
+        // }
+        // &:nth-child(2) {
+        //   max-width: 280px;
+        // }
       }
     }
   }
@@ -363,5 +258,421 @@
   }
   &-2 {
     margin-left: 10px;
+  }
+}
+
+.item {
+  &__flashlight {
+    display: inline-block;
+    position: absolute;
+
+    .flashlight {
+      position: relative;
+      width: 134px;
+      height: 134px;
+      border-radius: 50%;
+      background-image: linear-gradient(45deg, #180e37cc, #1e0c36c9);
+      border: 1px solid #34247c;
+      @media (max-width: 768px) {
+        // width: 120px;
+        // height: 120px;
+      }
+
+      &__first {
+        top: -4px;
+        right: -425px;
+        @media (max-width: 768px) {
+          right: -214px;
+          top: -81px;
+          width: 96px;
+          height: 96px;
+        }
+
+        .flash {
+          position: absolute;
+          border-radius: 50%;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+
+          &:nth-child(1) {
+            width: 108px;
+            height: 108px;
+            background-image: -o-linear-gradient(left, #4a1ea1c7, #4329b7c5);
+            background-image: linear-gradient(90deg, #4a1ea1c7, #4329b7c5);
+            border: 1px solid #8551ff;
+            @media (max-width: 768px) {
+              right: -214px;
+              top: 47px;
+              width: 84px;
+              height: 84px;
+            }
+          }
+          &:nth-child(2) {
+            width: 84px;
+            height: 84px;
+            background-image: linear-gradient(-45deg, #6333ffc7, #782ef8be);
+            border: 1px solid #9142e7;
+            @media (max-width: 768px) {
+              top: 46px;
+              left: 48px;
+              width: 60px;
+              height: 60px;
+            }
+          }
+          &:nth-child(3) {
+            top: 66px;
+            left: 67px;
+            width: 77px;
+            height: 77px;
+            background-image: linear-gradient(45deg, #e96eedb7, #f07bff);
+            border: 1px solid #ffb6ff;
+            @media (max-width: 768px) {
+              top: 46px;
+              left: 48px;
+              width: 50px;
+              height: 50px;
+            }
+          }
+          &:nth-child(4) {
+            top: 66px;
+            left: 67px;
+            width: 62px;
+            height: 62px;
+            background-image: linear-gradient(45deg, #ffceffb9, #ffd7ffb9);
+            border: 1px solid #fff;
+            @media (max-width: 768px) {
+              top: 46px;
+              left: 48px;
+              width: 40px;
+              height: 40px;
+            }
+          }
+          &:nth-child(5) {
+            top: 65px;
+            left: 70px;
+            width: 50px;
+            height: 50px;
+            background-color: #fff;
+            box-shadow: 0 0 30px 10px #fff;
+            @media (max-width: 768px) {
+              top: 46px;
+              left: 48px;
+              width: 35px;
+              height: 35px;
+              box-shadow: none;
+            }
+          }
+        }
+        &::before {
+          box-shadow: 40px 40px 200px 50px #8d1bff, 1px 1px 200px 50px #8d1bff;
+          @media (max-width: 768px) {
+            box-shadow: 40px 40px 200px 50px #591a98, 1px 1px 200px 50px #3b1d58;
+          }
+        }
+      }
+
+      &__second {
+        top: -28px;
+        left: -174px;
+        border-color: #6c49b0;
+        background-image: linear-gradient(45deg, #1e1429a4, #432266a6);
+        @media (max-width: 768px) {
+          left: 44px;
+          top: -116px;
+          width: 88px;
+          height: 88px;
+        }
+        .flash {
+          position: absolute;
+          border-radius: 50%;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+
+          &:nth-child(1) {
+            width: 108px;
+            height: 108px;
+            border-color: rgba(255, 127, 255, 0.692);
+            background-image: linear-gradient(45deg, #672997a2, #942de2af);
+            @media (max-width: 768px) {
+              right: -214px;
+              top: 45px;
+              width: 72px;
+              height: 72px;
+            }
+          }
+          &:nth-child(2) {
+            width: 84px;
+            height: 84px;
+            border-color: #cb6fff;
+            background-image: linear-gradient(45deg, #6f30a3b4, #ab48b4a8);
+            @media (max-width: 768px) {
+              top: 45px;
+              left: 44px;
+              width: 60px;
+              height: 60px;
+            }
+          }
+          &:nth-child(3) {
+            top: 66px;
+            left: 67px;
+            width: 77px;
+            height: 77px;
+            border-color: #ffdfff;
+            background-image: linear-gradient(45deg, #ffc1ffa1, #ff88ffab);
+            @media (max-width: 768px) {
+              top: 46px;
+              left: 43px;
+              width: 50px;
+              height: 50px;
+            }
+          }
+          &:nth-child(4) {
+            top: 66px;
+            left: 67px;
+            width: 62px;
+            height: 62px;
+            border-color: #fff;
+            background-image: linear-gradient(45deg, #ffc9ffaf, #ffb3ffb4);
+            @media (max-width: 768px) {
+              top: 46px;
+              left: 44px;
+              width: 40px;
+              height: 40px;
+            }
+          }
+          &:nth-child(5) {
+            top: 65px;
+            left: 70px;
+            width: 50px;
+            height: 50px;
+            border-color: #fff;
+            background-image: linear-gradient(45deg, #fff, #fff);
+            @media (max-width: 768px) {
+              top: 46px;
+              left: 43px;
+              width: 35px;
+              height: 35px;
+              box-shadow: none;
+            }
+          }
+        }
+        &::before {
+          box-shadow: 1px 1px 150px 35px #ff44ec, 1px 1px 150px 35px #ff44ec;
+          @media (max-width: 768px) {
+            box-shadow: 1px 1px 150px 10px #ff44ec, 1px 1px 150px 35px #ff44ec;
+          }
+        }
+      }
+
+      &__third {
+        top: -14px;
+        right: -402px;
+        border-color: #33ab85d8;
+        background-image: linear-gradient(45deg, #0d3a2bc5, #10583fce);
+        @media (max-width: 768px) {
+          right: -105px;
+          top: -108px;
+          width: 86px;
+          height: 86px;
+        }
+        @media (max-width: 650px) {
+          right: -281px;
+        }
+        @media (max-width: 425px) {
+          right: -223px;
+        }
+        @media (max-width: 340px) {
+          right: -188px;
+        }
+        .flash {
+          position: absolute;
+          border-radius: 50%;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+
+          &:nth-child(1) {
+            width: 108px;
+            height: 108px;
+            border-color: #3de697c4;
+            background-image: linear-gradient(45deg, #289f68bd, #2fe19dbb);
+            @media (max-width: 768px) {
+              left: 42px;
+              top: 43px;
+              width: 70px;
+              height: 70px;
+            }
+          }
+          &:nth-child(2) {
+            width: 84px;
+            height: 84px;
+            border-color: #4bffe5;
+            background-image: linear-gradient(45deg, #45ffd4be, #4bfffcbe);
+            @media (max-width: 768px) {
+              top: 44px;
+              left: 42px;
+              width: 60px;
+              height: 60px;
+            }
+          }
+          &:nth-child(3) {
+            top: 66px;
+            left: 67px;
+            width: 77px;
+            height: 77px;
+            border-color: #eaffff;
+            background-image: linear-gradient(45deg, #9bffffb7, #afffffc4);
+            @media (max-width: 768px) {
+              top: 44px;
+              left: 42px;
+              width: 50px;
+              height: 50px;
+            }
+          }
+          &:nth-child(4) {
+            width: 62px;
+            height: 62px;
+            top: 62px;
+            left: 67px;
+            border-color: #fff;
+            background-image: linear-gradient(45deg, #fff, #fff);
+            @media (max-width: 768px) {
+              top: 45px;
+              left: 42px;
+              width: 40px;
+              height: 40px;
+            }
+          }
+          &:nth-child(5) {
+            top: 59px;
+            left: 70px;
+            border-color: #fff;
+            background-image: linear-gradient(45deg, #fff, #fff);
+            @media (max-width: 768px) {
+              top: 46px;
+              left: 43px;
+              width: 35px;
+              height: 35px;
+              box-shadow: none;
+            }
+          }
+        }
+        &::before {
+          box-shadow: 40px 40px 200px 50px #24ffb2b9, 1px 1px 200px 50px #24ffb2b9;
+          @media (max-width: 768px) {
+            box-shadow: 40px 40px 200px 10px #24ffb2b9, 1px 1px 200px 35px #24ffb2b9;
+          }
+        }
+      }
+
+      &__four {
+        top: -8px;
+        left: -125px;
+        border-color: #247091c9;
+        background-image: linear-gradient(45deg, #0520449d, #092d6e81);
+        @media (max-width: 768px) {
+          top: -136px;
+          left: 20px;
+          width: 97px;
+          height: 97px;
+        }
+
+        .flash {
+          position: absolute;
+          border-radius: 50%;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+
+          &:nth-child(1) {
+            width: 108px;
+            height: 108px;
+            border-color: #3e9effc9;
+            background-image: linear-gradient(-45deg, #1826a7, #1976ace0);
+            @media (max-width: 768px) {
+              width: 93px;
+              height: 93px;
+              top: 48px;
+              left: 48px;
+            }
+          }
+          &:nth-child(2) {
+            width: 84px;
+            height: 84px;
+            border-color: #43a4ffc7;
+            background-image: linear-gradient(-45deg, #21c0ffc9, #1080accc);
+            @media (max-width: 768px) {
+              top: 49px;
+              left: 48px;
+              width: 76px;
+              height: 76px;
+            }
+          }
+          &:nth-child(3) {
+            top: 66px;
+            left: 67px;
+            width: 77px;
+            height: 77px;
+            border-color: #70d4ffcb;
+            background-image: linear-gradient(-45deg, #00d9ffcb, #238daec5);
+            @media (max-width: 768px) {
+              width: 60px;
+              height: 60px;
+              top: 49px;
+              left: 48px;
+            }
+          }
+          &:nth-child(4) {
+            top: 66px;
+            left: 67px;
+            width: 62px;
+            height: 62px;
+            border-color: #edffffc7;
+            background-image: linear-gradient(45deg, #78c5ffd3, #96ffffdc);
+            @media (max-width: 768px) {
+              width: 50px;
+              height: 50px;
+              top: 49px;
+              left: 48px;
+            }
+          }
+          &:nth-child(5) {
+            top: 65px;
+            left: 70px;
+            width: 50px;
+            height: 50px;
+            border-color: #fff;
+            background-image: linear-gradient(45deg, #fff, #fff);
+            box-shadow: 0 0 30px 15px #fff;
+            @media (max-width: 768px) {
+              width: 50px;
+              height: 50px;
+              top: 47px;
+              left: 48px;
+            }
+          }
+        }
+        &::before {
+          box-shadow: -45px -45px 200px 50px #1dddffd2, -45px -45px 200px 50px #1fddffc5;
+          @media (max-width: 768px) {
+            box-shadow: -7px -37px 148px 16px rgba(29, 221, 255, 0.8235294118),
+              -45px -45px 200px 50px rgba(31, 221, 255, 0.7725490196);
+          }
+        }
+      }
+
+      &::before {
+        content: '';
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+      }
+    }
   }
 }
