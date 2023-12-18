@@ -1,10 +1,10 @@
 .resources {
   background-color: rgb(9, 8, 18);
   background: #090812;
-
+  height: 1250px;
   position: relative;
   padding: 92px 0 110px 0;
-  background-image: url(../img/our-resources/Ellipse.svg);
+  background-image: url('../img/our-resources/Ellipse.svg');
   background-size: cover;
   background-repeat: no-repeat;
   z-index: 1;
@@ -73,14 +73,21 @@
     .container {
       &__left {
         position: relative;
+        display: flex;
+        justify-content: flex-start;
         text-align: center;
         max-width: 680px;
         padding: 71px 0px 0 120px;
         height: 517px;
         margin-top: 27px;
+        flex-direction: column;
+        align-content: center;
+        flex-wrap: wrap;
+        align-items: center;
 
         @media (max-width: 1450px) {
           max-width: 527px;
+          padding: 71px 0px 0 27px;
         }
 
         @media (max-width: 576px) {
@@ -107,11 +114,9 @@
           position: absolute;
           top: 50%;
           left: 50%;
-          -webkit-transform: translate(-50%, -50%);
-          -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
           // background: #c78cff;
-          background-image: url(../img/our-resources/Ellipse-4.svg);
+          background-image: url('../img/our-resources/Ellipse-4.svg');
           mix-blend-mode: hard-light;
           -webkit-filter: blur(100px);
           filter: blur(100px);
@@ -135,31 +140,26 @@
         &::after {
           content: '';
           position: absolute;
-          top: 50%;
-          left: 25%;
-          -webkit-transform: translate(-50%, -50%);
-          -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-          // background: #c78cff;
-          background-image: url(../img/our-resources/Ellipse-4.png);
-          mix-blend-mode: hard-light;
-          -webkit-filter: blur(100px);
-          filter: blur(100px);
-          width: 367.01px;
-          height: 362.63px;
-          z-index: 500;
-
+          background: url('../img/our-resources/Gradients.webp') no-repeat,
+            url('../img/our-resources/Gradients.png') no-repeat;
+          top: -158px;
+          left: -134px;
+          width: 840px;
+          height: 827px;
+          z-index: -1;
           @media (max-width: 1440px) {
-            width: 440px;
-            height: 377px;
           }
           @media (max-width: 1024px) {
-            margin-bottom: 50px;
+            top: -158px;
+            left: -182px;
           }
-          @media (max-width: 576px) {
-            margin-bottom: 50px;
-            width: 375px;
-            height: 266px;
+          @media (max-width: 390px) {
+            background: url('../img/our-resources/Gradients2.webp') no-repeat,
+              url('../img/our-resources/Gradients2.png') no-repeat;
+            top: -132px;
+            left: -16px;
+            width: 1263px;
+            height: 1250px;
           }
         }
 
@@ -168,18 +168,19 @@
           display: flex;
           z-index: 50;
           gap: 10px;
-          // font-family: Gilroy, sans-serif;
-          font-size: 13px;
-          font-weight: 500;
-          line-height: 20px;
+          // font-family: Gilroy;
+          font-size: 20px;
+          font-weight: 400;
+          line-height: 32px;
           letter-spacing: 0em;
           text-align: left;
+
           opacity: 0.6;
           @media (max-width: 576px) {
             gap: 5px;
           }
           &:nth-child(1) {
-            top: 63px;
+            top: 67px;
             left: 115px;
             @media (max-width: 1775px) {
             }
@@ -190,11 +191,12 @@
           }
 
           &:nth-child(2) {
-            top: 187px;
+            top: 192px;
             right: -25px;
 
-            @media (max-width: 1775px) {
-              right: 0;
+            @media (max-width: 1450px) {
+              top: 130px;
+              right: 40px;
             }
             @media (max-width: 576px) {
               right: 59px;
@@ -202,16 +204,22 @@
             }
           }
           &:nth-child(3) {
-            bottom: 32px;
+            bottom: 27px;
             right: -36px;
+            @media (max-width: 1450px) {
+              right: 38px;
+            }
             @media (max-width: 576px) {
               bottom: 63px;
               right: -10px;
             }
           }
           &:nth-child(4) {
-            left: 13px;
-            bottom: -42px;
+            left: 12px;
+            bottom: -118px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
 
             @media (max-width: 768px) {
               bottom: 27px;
