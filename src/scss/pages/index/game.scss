@@ -161,7 +161,7 @@
       flex-wrap: wrap;
       align-items: center;
       // background: url('../img/Game/mulo.png') repeat-x;
-      background: url('../img/game/Vector.png');
+      background: url('../img/Game/Vector.webp'), url('../img/Game/Vector.png');
       // background: linear-gradient(180deg, rgba(58, 78, 255, 0) 0%, rgba(156, 58, 255, 0.14) 100%);
 
       @media (max-width: 1200px) {
@@ -202,16 +202,15 @@
 
       &::before {
         content: '';
+
         position: absolute;
         top: 0;
         left: 0;
-        right: 0;
-        bottom: 0;
-        background: url('../img/game/Vector.png');
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(297deg, rgba(58, 78, 255, 0), rgba(156, 58, 255, 0.14));
+        backdrop-filter: blur(5px);
         z-index: -1;
-        background: linear-gradient(180deg, rgba(58, 78, 255, 0) 0%, rgba(156, 58, 255, 0.14) 100%);
-        filter: blur(5px);
-        transition: filter 0.5s ease;
       }
     }
   }
@@ -262,6 +261,8 @@
     }
     &__blur {
       &-top {
+        display: none;
+
         position: absolute;
         width: 500px;
         height: 500px;
@@ -269,6 +270,9 @@
         top: 122px;
         left: -91px;
         transform: rotate(42deg);
+        @media (max-width: 1024px) {
+          display: inline;
+        }
         @media (max-width: 425px) {
           top: -122px;
           left: -91px;

@@ -1,11 +1,11 @@
 .faq {
-  padding: 465px 0 100px 0;
+  padding: 460px 0 100px 0;
   position: relative;
   // background-image: url('../img/FAQ/curve.webp'), url('../img/FAQ/curve.png');
   background: url('../img/FAQ/curve.webp') 0 -390px/100% 80% no-repeat,
     url('../img/FAQ/curve.png') 0 -390px/100% 80% no-repeat;
   @media (max-width: 768px) {
-    padding: 200px 0 60px 0;
+    padding: 180px 0 60px 0;
   }
   &__con {
     display: flex;
@@ -18,7 +18,7 @@
     position: relative;
     background: linear-gradient(360deg, rgba(58, 78, 255, 0.15) 0%, rgba(156, 58, 255, 0.44) 100%);
     width: 1320px;
-    height: 1310px;
+    height: 1220px;
     margin: 0px auto;
     padding: 4px;
 
@@ -28,12 +28,21 @@
       margin: 0 20px;
     }
     @media (max-width: 1024px) {
-      height: 1160px;
+      height: 1060px;
+    }
+    @media (max-width: 768px) {
+      height: 1090px;
+    }
+    @media (max-width: 580px) {
+      height: 1250px;
     }
     @media (max-width: 425px) {
       margin: 0 5px;
-      height: 1060px;
+      height: 1000px;
       clip-path: polygon(9% 0, 80% 0%, 100% 0, 100% 100%, 80% 100%, 20% 100%, 0 100%, 0 2%);
+    }
+    @media (max-width: 325px) {
+      height: 1150px;
     }
   }
 
@@ -51,8 +60,8 @@
   &__container {
     position: relative;
     background: #10051e url('../img/FAQ/Vector.png') 0 0 repeat-y;
-    padding: 93px 20px 95px 77px;
-    height: 1300px;
+    padding: 89px 20px 95px 77px;
+    height: 1210px;
     clip-path: polygon(5% 0, 80% 0%, 100% 0, 100% 100%, 80% 100%, 20% 100%, 0 100%, 0 4%);
     position: relative;
 
@@ -101,16 +110,23 @@
       padding: 60px 50px 60px 60px;
     }
     @media (max-width: 1024px) {
-      height: 1150px;
+      height: 1050px;
     }
     @media (max-width: 768px) {
       padding: 40px 30px 30px 30px;
+      height: 1080px;
+    }
+    @media (max-width: 580px) {
+      height: 1240px;
     }
     @media (max-width: 425px) {
       background: #18072d url('../img/FAQ/Vector-mb.png') 0 0 repeat-y;
-      height: 1050px;
+      height: 990px;
       padding: 55px 13px 20px 3px;
       clip-path: polygon(9% 0, 80% 0%, 100% 0, 100% 100%, 80% 100%, 20% 100%, 0 100%, 0 2%);
+    }
+    @media (max-width: 325px) {
+      height: 1140px;
     }
   }
 
@@ -134,7 +150,7 @@
         text-align-last: left;
         background-color: transparent;
         color: #fff;
-        padding: 25px 47px 48px 10px;
+        padding: 20px 47px 48px 10px;
         font-size: 30px;
         font-weight: 700;
         line-height: 1.4;
@@ -176,10 +192,11 @@
           line-height: 22px;
           letter-spacing: 0em;
         }
-        @media (max-width: 584px) {
-          text-align: left;
+        @media (max-width: 768px) {
+          padding: 20px 47px 48px 1px;
           margin-bottom: 14px;
         }
+
         @media (max-width: 425px) {
           padding: 10px 47px 26px 10px;
         }

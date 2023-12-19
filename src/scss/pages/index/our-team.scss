@@ -1,6 +1,6 @@
 .team {
   position: relative;
-  padding: 140px 0 0 0;
+  padding: 145px 0 0 0;
   background: url('../img/our-team/lines.webp') 0 0 no-repeat;
   z-index: 1;
 
@@ -17,12 +17,14 @@
     }
   }
   @media (max-width: 425px) {
-    padding: 78px 0 0 0;
+    padding: 18px 0 0 0;
   }
   &__con {
     position: relative;
   }
-
+  &__title {
+    margin-bottom: 10px;
+  }
   &__info {
     text-align: center;
     text-transform: uppercase;
@@ -405,7 +407,7 @@
       top: 2923px;
     }
     @media (max-width: 425px) {
-      top: 2810px;
+      top: 2730px;
     }
 
     span {

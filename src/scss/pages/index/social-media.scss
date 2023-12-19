@@ -1,6 +1,6 @@
 .media {
   position: relative;
-  padding: 110px 0 165px 0;
+  padding: 175px 0 165px 0;
   background: url('../img/social-media/bg.webp') 0 0 no-repeat, url('../img/social-media/bg.png') 0 0 no-repeat;
   @media (max-width: 1220px) {
     padding: 25px 0 0 0;
@@ -23,7 +23,7 @@
       position: absolute;
       width: 978px;
       height: 1026px;
-      top: -50%;
+      top: -17%;
       right: 50%;
       transform: translate(50%, 0px);
       background: url('../img/social-media/2.webp') 0 0 no-repeat, url('../img/social-media/2.png') 0 0 no-repeat;
@@ -52,7 +52,7 @@
   &__info {
     text-transform: uppercase;
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 65px;
   }
 
   &__subtitle {
@@ -80,6 +80,7 @@
       align-items: center;
       min-height: 400px;
       max-width: 280px;
+      margin-right: 5px;
 
       @media (max-width: 1220px) {
         flex: 0 0 50%;
@@ -93,6 +94,7 @@
       @media (max-width: 425px) {
         min-height: 300px;
         max-width: 209px;
+        margin-right: 0;
       }
 
       .media__item {
@@ -161,8 +163,8 @@
 }
 .star-dis {
   position: absolute;
-  top: -24px;
-  right: 180px;
+  top: 0px;
+  right: 183px;
   @media (max-width: 768px) {
     top: 3px;
     right: 162px;
