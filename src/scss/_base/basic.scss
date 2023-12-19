@@ -38,7 +38,6 @@ h1 {
 }
 
 h2 {
-  font-family: $fontFamily-second, sans-serif;
   font-weight: 700;
   font-size: 48px;
   letter-spacing: 7px;
@@ -157,7 +156,7 @@ body {
       content: '';
       position: absolute;
       width: 6px;
-      height: 104%;
+      height: 100%;
       top: 0;
       left: 0;
       border-radius: 41px;
@@ -173,6 +172,7 @@ body {
 }
 
 .blur {
+  z-index: -1;
   position: absolute;
   height: 100%;
   width: 100%;

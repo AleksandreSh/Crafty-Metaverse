@@ -7,7 +7,6 @@ function burger() {
       document.body.classList.toggle('_lock');
       iconMenu.classList.toggle('_active');
       menuBody.classList.toggle('_active');
-      headerLogo.classList.toggle('_active');
     });
   }
   let menuLinks = document.querySelectorAll('.menu__link');

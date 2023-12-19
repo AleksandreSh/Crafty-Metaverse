@@ -95,7 +95,8 @@
           height: 100%;
           right: 44px;
           top: 2px;
-          background: url('../img/our-resources/mulo.png');
+          // background: url('../img/our-resources/mulo.png');
+          background: linear-gradient(268.83deg, rgba(58, 78, 255, 0) -0.39%, rgba(216, 58, 255, 0.1) 102.63%);
 
           @media (max-width: 1450px) {
             width: 108%;
@@ -160,8 +161,7 @@
         &::after {
           content: '';
           position: absolute;
-          background: url('../img/our-resources/Gradients.webp') no-repeat,
-            url('../img/our-resources/Gradients.png') no-repeat;
+          background: url('../img/our-resources/EllipseMain.png') no-repeat;
           top: -158px;
           left: -134px;
           width: 840px;
@@ -357,6 +357,7 @@
 }
 
 .blur {
+  z-index: -1;
   position: absolute;
   width: 100%;
   height: 100%;
